@@ -132,9 +132,7 @@ function addScrollEvent() {
   navBarColorMobile = document.getElementById("nav-color-mobile");
 
   window.addEventListener("scroll", function () {
-    console.log(window.pageYOffset);
     if (this.window.pageYOffset !== 0) {
-      console.log(navBarColor);
       navBarColor.style = "background-color: black;";
       navBarColorMobile.style = "background-color: black;";
     } else {
@@ -208,7 +206,6 @@ function toggleNavButton() {
   }
 }
 function main() {
-  console.log("Hello world");
   slider = document.getElementById("slider");
   sliderSecondaryCaption = document.getElementById("slider-secondary-caption");
   sliderPrimaryCaption = document.getElementById("slider-primary-caption");
