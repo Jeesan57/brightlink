@@ -68,8 +68,8 @@ function addKeyFrames() {
 
 @keyframes textup{
   0%{
-    opacity: 1;
-    transform: translateY(100px);
+    opacity: 0;
+    transform: translateY(50px);
   }
   2%{
     opacity: 1;
@@ -80,8 +80,8 @@ function addKeyFrames() {
     transform: translateY(0px);
   }
   100%{
-    opacity: .9;
-    transform: translateY(-100px);
+    opacity: 0;
+    transform: translateY(-50px);
   }
 }
 
