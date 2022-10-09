@@ -51,7 +51,7 @@ function addKeyFrames() {
     }
 
 
-    10% {
+    5% {
       opacity: 0.95;
     }
 
@@ -68,13 +68,20 @@ function addKeyFrames() {
 
 @keyframes textup{
   0%{
+    opacity: 1;
     transform: translateY(100px);
   }
-  10%{
+  2%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  98%{
+    opacity: 1;
     transform: translateY(0px);
   }
   100%{
-    transform: translateY(0px);
+    opacity: .9;
+    transform: translateY(-100px);
   }
 }
 
