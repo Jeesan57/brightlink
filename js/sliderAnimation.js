@@ -260,7 +260,6 @@ function main() {
   secondaryLink = document.getElementById('secondary-link');
   description = document.getElementById('secondary-description');
 
-  console.log(primary1, primary2, secondaryLink, description);
 
   // takes 0 to 3
   let information = informationArray[0];

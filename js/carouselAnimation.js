@@ -51,12 +51,10 @@ function textAnimation(element, time) {
 
     element.classList.add('animate-text');
 
-    console.log(animationRunning);
 
     setTimeout(function () {
         animationRunning = false;
         animationRunningMobile = false;
-        console.log(animationRunning);
         element.classList.remove('animate-text');
     }, time * 1000);
 
