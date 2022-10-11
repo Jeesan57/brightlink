@@ -46,10 +46,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20vw;
+  width: 30vw;
   height: 100%;
   flex-direction: column;
+  background-color: black;
 }
+
 
 .line {
   height: 20vh;
@@ -58,6 +60,7 @@
   display: flex;
   justify-content: center;
   position: relative;
+  right: 10%;
 }
 
 .line:last-child {
@@ -270,7 +273,7 @@
   }
 
   .line-button {
-    transform: scale(0.5) translateX(-60px) translateY(-25px);
+    transform: scale(0.5) translateX(-65px) translateY(-25px);
   }
 
   .active {
