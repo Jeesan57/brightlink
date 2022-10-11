@@ -1,6 +1,14 @@
 let slider = null;
-let sliderSecondaryCaption = null;
-let sliderPrimaryCaption = null;
+
+
+
+let primary1 = null;
+let primary2 = null;
+let secondaryLink = null;
+let description = null;
+
+
+
 let sliderImage = null;
 let navbarExpanded = null;
 let changeTime = 11;
@@ -18,26 +26,44 @@ let currentPageElement = null;
 
 const informationArray = [
   {
-    image: "../images/banner/international-movers.jpg",
-    secondaryCaption: "Moving / CARGO / STORAGE",
-    primaryCaption: "BRIGHTLINK CARGO MOVERS",
+    image: "./images/banner/international-movers.jpg",
+
+    primary1: "Moving & Storage",
+    primary2: "Brightlink cargo",
+    secondaryLink: "About Us >",
+    secondaryLinkHref: "https://www.google.com",
+    description: "1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit vitae officiis, quod incidunt, ea, fugit dignissimos esse minima placeat nisi est distinctio tempore eveniet fugiat? Ullam eaque totam atque obcaecati? Tenetur doloremque et ex delectus error fuga quia aspernatur nobis!",
   },
   {
-    image: "../images/banner/movers-and-packers.jpg",
-    secondaryCaption: "Domestic Relocation / International Movers",
-    primaryCaption: "RELOCATION SERVICES",
+    image: "./images/banner/movers-and-packers.jpg",
+
+    primary1: "Cargo",
+    primary2: "Services",
+    secondaryLink: "Cargo Services >",
+    secondaryLinkHref: "https://www.google.com",
+    description: "2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit vitae officiis, quod incidunt, ea, fugit dignissimos esse minima placeat nisi est distinctio tempore eveniet fugiat? Ullam eaque totam atque obcaecati? Tenetur doloremque et ex delectus error fuga quia aspernatur nobis!",
   },
   {
-    image: "../images/banner/door-to-door-cargo.jpg",
-    secondaryCaption: "Door to Door Cargo / Shipping Service",
-    primaryCaption: "CARGO SERVICES",
+    image: "./images/banner/door-to-door-cargo.jpg",
+
+    primary1: "Domestic",
+    primary2: "Relocation",
+    secondaryLink: "moving services >",
+    secondaryLinkHref: "https://www.google.com",
+    description: "3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit vitae officiis, quod incidunt, ea, fugit dignissimos esse minima placeat nisi est distinctio tempore eveniet fugiat? Ullam eaque totam atque obcaecati? Tenetur doloremque et ex delectus error fuga quia aspernatur nobis!",
+
   },
   {
-    image: "../images/banner/storage-service.jpg",
-    secondaryCaption: "storage Service / Warehousing Service",
-    primaryCaption: "STORAGE SERVICES",
+    image: "./images/banner/storage-service.jpg",
+
+    primary1: "International",
+    primary2: "Moving",
+    secondaryLink: "International Movers >",
+    secondaryLinkHref: "https://www.google.com",
+    description: "4 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit vitae officiis, quod incidunt, ea, fugit dignissimos esse minima placeat nisi est distinctio tempore eveniet fugiat? Ullam eaque totam atque obcaecati? Tenetur doloremque et ex delectus error fuga quia aspernatur nobis!",
   },
 ];
+
 
 function addKeyFrames() {
   const keyFrames = document.createElement("style");
@@ -71,11 +97,11 @@ function addKeyFrames() {
     opacity: 0;
     transform: translateY(50px);
   }
-  2%{
+  20%{
     opacity: 1;
     transform: translateY(0px);
   }
-  98%{
+  80%{
     opacity: 1;
     transform: translateY(0px);
   }
@@ -91,16 +117,21 @@ function addKeyFrames() {
 
   }
 
-  #slider-secondary-caption {
+  #primary1 {
     animation: textup ${changeTime}s linear infinite;
-
-
   }
-  #slider-primary-caption {
+  #primary2 {
     animation: textup ${changeTime}s linear infinite;
-
-
   }
+
+  #secondary-link {
+    animation: textup ${changeTime}s linear infinite;
+  }
+
+  #secondary-description {
+    animation: textup ${changeTime}s linear infinite;
+  }
+
 
   
 `;
@@ -132,7 +163,7 @@ function addScrollEvent() {
   navBarColorMobile = document.getElementById("nav-color-mobile");
 
   window.addEventListener("scroll", function () {
-    if (this.window.pageYOffset !== 0) {
+    if (this.window.pageYOffset > 100) {
       navBarColor.style = "background-color: black;";
       navBarColorMobile.style = "background-color: black;";
     } else {
@@ -150,11 +181,26 @@ function addMediaQuery() {
 }
 
 function setPage(pageNumber) {
+
   // takes 0 to 3
   let information = informationArray[pageNumber];
   sliderImage.src = information.image;
-  sliderSecondaryCaption.textContent = information.secondaryCaption;
-  sliderPrimaryCaption.textContent = information.primaryCaption;
+
+
+  primary1.textContent = information.primary1;
+  primary2.textContent = information.primary2;
+  secondaryLink.textContent = information.secondaryLink;
+  secondaryLink.onclick = function () {
+    window.location = information.secondaryLinkHref;
+  }
+  description.textContent = information.description;
+
+
+
+
+
+
+
 }
 
 function setSliders(currentPage) {
@@ -207,8 +253,27 @@ function toggleNavButton() {
 }
 function main() {
   slider = document.getElementById("slider");
-  sliderSecondaryCaption = document.getElementById("slider-secondary-caption");
-  sliderPrimaryCaption = document.getElementById("slider-primary-caption");
+
+
+  primary1 = document.getElementById('primary1');
+  primary2 = document.getElementById('primary2');
+  secondaryLink = document.getElementById('secondary-link');
+  description = document.getElementById('secondary-description');
+
+  console.log(primary1, primary2, secondaryLink, description);
+
+  // takes 0 to 3
+  let information = informationArray[0];
+
+
+  primary1.textContent = information.primary1;
+  primary2.textContent = information.primary2;
+  secondaryLink.textContent = information.secondaryLink;
+  secondaryLink.onclick = function () {
+    window.location = information.secondaryLinkHref;
+  }
+  description.textContent = information.description;
+
   sliderImage = document.getElementById("slider-image");
 
   slider0 = document.getElementById("slider0");

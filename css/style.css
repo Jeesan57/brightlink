@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -118,48 +121,107 @@ body {
 #slider {
   position: relative;
   height: 100%;
+  width: 100vw;
   display: flex;
   justify-content: center;
-  align-items: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
   overflow-x: hidden;
-  padding-left: 10%;
-  padding-right: 10%;
   flex-direction: column;
   overflow-y: hidden;
+  display: flex;
 }
 
 
 #slider-image {
+  z-index: -1;
   position: absolute;
   opacity: 0.2;
   min-width: 100vw;
   min-height: 100vh;
   filter: grayscale(20%);
+  filter: blur(.1px);
+  -webkit-filter: blur(.1px);
+
+}
+
+.info-container 
+{
+  min-width: 20vw;
+  min-height: 20vh;
+  color: white;
+  margin-left: 20vw;
+}
+
+
+
+#primary1
+{
+  color: transparent;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 80px;
+  letter-spacing: -.3rem;
+
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+
+
+}
+#primary2
+{
+  color: white;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 60px;
+  letter-spacing: -1px;
+  letter-spacing: -.3rem;
+
+  
+}
+
+.info-secondary
+{
+  display: flex;
+}
+
+
+.secondary-link-container
+{
+  width: max-content;
+  margin-top: 40px;
+
+}
+
+#secondary-link
+{
+  color: white;
+  padding-right: 10vw;
+  text-decoration: none;
+  font-family: 'Manrope', sans-serif ;
+  font-weight: bolder;
+  margin-left: 5px;
+  font-size: 15px;
+}
+
+
+.secondary-description-container
+{
+  margin-top: 40px;
+  max-width: 15vw;
+  font-weight: 100;
+  font-family: 'Manrope', sans-serif ;
+  font-size: 16px;
+
 }
 
 #slider-secondary-caption {
   color: #fff;
-  text-align: center;
-  font-family: "Quicksand", sans-serif;
-  position: static;
-  margin: 0;
-  letter-spacing: 0.3em;
-  font-size: 18px;
 }
 
 #slider-primary-caption {
   color: #fff;
-  text-align: center;
-  font-family: "Quicksand", sans-serif;
-  position: static;
-  font-size: 56px;
-  letter-spacing: 6px;
-  line-height: 66px;
-  text-transform: uppercase;
 }
 .fixed-image {
   margin-bottom: 30px;
@@ -200,9 +262,9 @@ body {
 
 .slider-bar {
   background-color: gray;
-  color: white;
   height: 7vh;
   width: 2px;
+  font-size: 0;
 }
 
 .slider-identifier-container p {
@@ -305,6 +367,25 @@ body {
     font-size: 30px;
     letter-spacing: 1px;
     line-height: 36px;
+  }
+
+  #primary1
+  {
+    font-size: 50px;
+    letter-spacing: 0px;
+  }
+  #primary2
+  {
+    font-size: 34px;
+    letter-spacing: 0px;
+  }
+  .secondary-description-container
+  {
+    display: none;
+  }
+  .secondary-link-container
+  {
+    margin-top: 10px;
   }
 }
 
