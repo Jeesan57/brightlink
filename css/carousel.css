@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dangrek&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
 
 * {
   margin: 0;
@@ -22,6 +24,8 @@
   width: 100%;
   height: 100%;
   z-index: -1;
+  overflow-x: hidden;
+
 
 }
 
@@ -32,6 +36,7 @@
   width: 100%;
   height: 100%;
   z-index: -1;
+
 
 }
 
@@ -49,7 +54,6 @@
   width: 30vw;
   height: 100%;
   flex-direction: column;
-  background-color: black;
 }
 
 
@@ -120,19 +124,48 @@
 }
 
 .image-container {
+  position: relative;
   min-width: 12.5vw;
   max-width: 12.5vw;
   height: 60%;
   border-radius: 10px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
+  word-break: break-all;
+  word-wrap: break-word;
 }
+
+.caption {
+  position: absolute;
+  z-index: 20;
+  color: white;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 24px;
+  left: 1.25vw;
+  width: 11.25vw;
+  max-width: 11.25vw;
+  margin-bottom: 55px;
+}
+
+
+.secondary-caption {
+  position: absolute;
+  z-index: 20;
+  bottom: 0;
+  color: white;
+  left: 1.25vw;
+  width: 11.25vw;
+  margin-bottom: 30px;
+}
+
+
 
 .image-container img {
   height: 100%;
   width: 90%;
   border-radius: 10px;
+
+  filter: contrast(88%);
 }
 
 .active-image-container {
@@ -141,12 +174,12 @@
 }
 
 .move-button {
-  background-color: #ffffff70;
+  background-color: #44444480;
+  color: black;
   border-radius: 50%;
   width: 40px;
   height: 40px;
   border: none;
-  color: black;
   font-size: 20px;
 }
 
@@ -237,7 +270,6 @@
     width: 80vw;
     display: flex;
     height: 100%;
-    overflow: hidden;
   }
 
 
@@ -273,7 +305,7 @@
   }
 
   .line-button {
-    transform: scale(0.5) translateX(-65px) translateY(-25px);
+    transform: scale(0.5) translateX(-50px) translateY(-25px);
   }
 
   .active {

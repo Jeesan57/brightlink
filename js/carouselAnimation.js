@@ -90,9 +90,19 @@ function slidingAnimation(current, target, time) {
             setPage(((current + i - 1) % numberOfPages) + 1);
         };
 
+        let caption = document.createElement('h1');
+        caption.textContent = informationArray[(current + i - 1) % numberOfPages].title;
+        caption.classList.add('caption');
+
+        let secondaryCaption = document.createElement('p');
+        secondaryCaption.textContent = informationArray[(current + i - 1) % numberOfPages].secondaryCaption;
+        secondaryCaption.classList.add('secondary-caption');
+
         if (informationArray[(current + i - 1) % numberOfPages].thumbnailSrc === informationArray[target - 1].thumbnailSrc) {
             activeContainers = [...activeContainers, imageContainer];
         }
+        imageContainer.appendChild(caption);
+        imageContainer.appendChild(secondaryCaption);
 
         imageContainer.appendChild(image);
         container.appendChild(imageContainer);
@@ -109,9 +119,25 @@ function slidingAnimation(current, target, time) {
 
     var instance = window.setInterval(function () {
         let images = document.querySelectorAll('.image-container img');
+        let captions = document.querySelectorAll('.image-container .caption');
+        let secondaryCaptions = document.querySelectorAll('.image-container .secondary-caption');
+
+
         for (let i = 0; i < images.length; i++) {
             images[i].style.transform = 'translateX(-' + slided + '%)';
         }
+
+        for (let i = 0; i < captions.length; i++) {
+            captions[i].style.transform = 'translateX(-' + slided + '%)';
+        }
+
+
+        for (let i = 0; i < secondaryCaptions.length; i++) {
+            secondaryCaptions[i].style.transform = 'translateX(-' + slided + '%)';
+        }
+
+
+
 
 
 
@@ -128,6 +154,100 @@ function slidingAnimation(current, target, time) {
         }
     }, time)
 }
+
+
+function slidingAnimation(current, target, time) {
+
+
+    animationRunning = true;
+
+    let activeContainers = [];
+
+
+    let { result: places, direction } = countPlaces(current, target); // how many places to slide
+    // var distance = places * 100;
+
+
+    let container = document.getElementById('images-container');
+
+    let imageContainers = document.querySelectorAll('.main .image-container');
+
+    if (imageContainers) {
+        for (let i = 0; i < imageContainers.length; i++) {
+            container.removeChild(imageContainers[i]);
+        }
+    }
+
+    for (let i = 0; i < numberOfPages * 2; i++) {
+        let imageContainer = document.createElement("div");
+        imageContainer.classList.add('image-container');
+        let image = document.createElement('img');
+        image.src = informationArray[(current + i - 1) % numberOfPages].thumbnailSrc;
+        image.onclick = function () {
+            setPage(((current + i - 1) % numberOfPages) + 1);
+        };
+
+        let caption = document.createElement('h1');
+        caption.textContent = informationArray[(current + i - 1) % numberOfPages].title;
+        caption.classList.add('caption');
+
+        let secondaryCaption = document.createElement('p');
+        secondaryCaption.textContent = informationArray[(current + i - 1) % numberOfPages].secondaryCaption;
+        secondaryCaption.classList.add('secondary-caption');
+
+        if (informationArray[(current + i - 1) % numberOfPages].thumbnailSrc === informationArray[target - 1].thumbnailSrc) {
+            activeContainers = [...activeContainers, imageContainer];
+        }
+        imageContainer.appendChild(caption);
+        imageContainer.appendChild(secondaryCaption);
+
+        imageContainer.appendChild(image);
+        container.appendChild(imageContainer);
+    }
+
+    // let distance = 12.5 * places;
+    var slided = 0;
+    let stepDistance = 2;
+    // if(places > 2) stepDistance = 2;
+    // if(places > 3) stepDistance = 5;
+
+
+    console.log(current);
+
+
+
+
+    var instance = window.setInterval(function () {
+        let images = document.querySelectorAll('.image-container img');
+        let captions = document.querySelectorAll('.image-container .caption');
+        let secondaryCaptions = document.querySelectorAll('.image-container .secondary-caption');
+
+
+        for (let i = 0; i < images.length; i++) {
+            images[i].style.transform = 'translateX(-' + slided + '%)';
+        }
+
+        for (let i = 0; i < captions.length; i++) {
+            captions[i].style.transform = 'translateX(-' + slided + '%)';
+        }
+
+
+        for (let i = 0; i < secondaryCaptions.length; i++) {
+            secondaryCaptions[i].style.transform = 'translateX(-' + slided + '%)';
+        }
+
+
+        slided = slided + stepDistance;
+        if (slided > places * 110) {
+            animationRunning = false;
+            for (let i = 0; i < activeContainers.length; i++) {
+                heightAnimation(activeContainers[i], 60, 80, 1);
+            }
+            window.clearInterval(instance);
+        }
+    }, time)
+}
+
 
 function slidingAnimationMobile(current, target, time) {
 
@@ -158,6 +278,8 @@ function slidingAnimationMobile(current, target, time) {
         image.onclick = function () {
             setPageMobile(((current + i - 1) % numberOfPages) + 1);
         };
+
+
 
         if (informationArray[(current + i - 1) % numberOfPages].thumbnailSrc === informationArray[target - 1].thumbnailSrc) {
             activeContainers = [...activeContainers, image];
@@ -223,6 +345,7 @@ let informationArray = [
 
     {
         title: "Komodo",
+        secondaryCaption: "Indonesia",
         description: "This is a random description for testing. We are currently describing something. Some facts. Some info. About Komodo",
         exploreLink: 'http://www.google.com/search?q=komodo',
         src: "./images/carousel/komodo.jpg",
@@ -230,6 +353,7 @@ let informationArray = [
     },
     {
         title: "Kerala",
+        secondaryCaption: "India",
         description: "This is a random description for testing. We are currently describing something. Some facts. Some info. About Kerala",
         exploreLink: 'http://www.google.com/search?q=Kerala',
         src: "./images/carousel/kerala.jpg",
@@ -238,6 +362,7 @@ let informationArray = [
 
     {
         title: "Matterhorn",
+        secondaryCaption: "Switzerland",
         description: "This is a random description for testing. We are currently describing something. Some facts. Some info. About Matterhorn",
         exploreLink: 'http://www.google.com/search?q=Matterhorn',
         src: "./images/carousel/matterhorn.jpg",
@@ -245,6 +370,7 @@ let informationArray = [
     },
     {
         title: "Cappadocia",
+        secondaryCaption: "Turkey",
         description: "This is a random description for testing. We are currently describing something. Some facts. Some info. About Cappadocia",
         exploreLink: 'http://www.google.com/search?q=Cappadocia',
         src: "./images/carousel/cappadocia.jpg",
@@ -252,6 +378,7 @@ let informationArray = [
     },
     {
         title: "Malgovik",
+        secondaryCaption: "Sweden",
         description: "This is a random description for testing. We are currently describing something. Some facts. Some info. About Malgovik",
         exploreLink: 'http://www.google.com/search?q=Malgovik',
         src: "./images/carousel/malgovik.jpg",

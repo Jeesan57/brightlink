@@ -1,6 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+
 .footer {
   background-color: #0b130f;
   color: white;
+  font-family: 'Manrope', sans-serif ;
+  width: 100vw;
+  height: max-content;
 }
 
 .footer .container {
@@ -9,6 +29,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   padding: 30px;
+  height: max-content;
 }
 
 .footer-column ul {
@@ -19,6 +40,7 @@
   all: unset;
   font-size: small;
   color: #cacaca;
+  font-family: 'Manrope', sans-serif ;
 }
 .footer-column input {
   border: none;
@@ -49,8 +71,9 @@
   display: flex;
   align-items: center;
   margin-top: 10px;
-  margin-left: 5%;
   gap: 15px;
+  margin-left: 25px;
+  font-family: 'Manrope', sans-serif ;
   
 }
 
@@ -62,6 +85,8 @@
   align-items: center;
   background-color: #2ec002;
   color: white;
+  font-family: 'Manrope', sans-serif ;
+
 }
 .smGlobalBtn {
   text-decoration: none;
@@ -96,13 +121,12 @@
     transform: translateX(20px);
     margin-top: auto;
     margin-bottom: auto;
-
-
 }
+
 
 @media (max-width: 575px) {
   .footer .container {
-    width: 90%;
+    width: 80%;
     grid-template-columns: 1fr 1fr;
   }
   .rights-text

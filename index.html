@@ -8,8 +8,9 @@
     <title>BrightLink Cargo Movers | Movers & Packers, International Relocation</title>
 
     <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/navbar.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="css/footer.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    
+
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -28,7 +29,15 @@
             <h1 id="slider-primary-caption">BRIGHTLINK CARGO MOVERS</h1> -->
             <div class="info-container">
 
-                
+                <div class="slider-button-container">
+                    <button class="move-button" onclick="goToPrevPage()">
+                        <i id="bars" class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                    </button>
+                </div>
+
+
+
+
                 <div class="sliders">
                     <p id="current-page-number">01</p>
                     <div class="slider-bar" id="slider0">.</div>
@@ -46,22 +55,28 @@
                         <h1 id="primary2">
                             Relocation
                         </h1>
-    
+
                     </div>
                     <div class="info-secondary">
                         <div class="secondary-link-container">
                             <p id="secondary-link">link > </p>
                         </div>
                         <div class="secondary-description-container">
-                            <p id="secondary-description" >
-                                description Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat reiciendis illo aut ea officiis tempora eius perferendis dolor officia iste!
+                            <p id="secondary-description">
+                                description Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat reiciendis
+                                illo aut ea officiis tempora eius perferendis dolor officia iste!
                             </p>
                         </div>
                     </div>
-
                 </div>
 
-             
+                <div class="slider-button-container">
+                    <button class="move-button" onclick="goToNextPage()">
+                        <i id="bars" class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </button>
+                </div>
+
+
             </div>
         </div>
     </div>
@@ -111,13 +126,11 @@
 
 
 
-    <div class="left-bar">
-        <div class="fixed-socials">
-            <a href="tel:+971581344800" class="float2" target="_blank" id="free_demo"><img src="images/bounce.svg"
-                    class="fixed-image" id="bounce" alt="Office Relocation"> </a>
-            <a href="https://api.whatsapp.com/send?phone=971581344800" class="float1" target="_blank"
-                id="free_demo"><img class="fixed-image" src="images/whatsapp.svg" alt="Self-Storage Service"> </a>
-        </div>
+    <div class="fixed-socials">
+        <a href="tel:+971581344800" class="float2" target="_blank" id="free_demo"><img src="images/bounce.svg"
+                class="fixed-image" id="bounce" alt="Office Relocation"> </a>
+        <a href="https://api.whatsapp.com/send?phone=971581344800" class="float1" target="_blank" id="free_demo"><img
+                class="fixed-image" src="images/whatsapp.svg" alt="Self-Storage Service"> </a>
     </div>
 
     <div id="nav-expanded" class="hide">

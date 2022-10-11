@@ -167,9 +167,9 @@ function addMediaQuery() {
   });
 }
 
+// takes 0 to 3
 function setPage(pageNumber) {
-
-  // takes 0 to 3
+  currentPage = pageNumber;
   let information = informationArray[pageNumber];
   sliderImage.src = information.image;
 
@@ -181,14 +181,28 @@ function setPage(pageNumber) {
     window.location = information.secondaryLinkHref;
   }
   description.textContent = information.description;
-
-
-
-
-
-
-
 }
+
+function goToPrevPage()
+{
+  console.log('aise');
+  let totalPages = informationArray.length;
+  let target = 0;
+  if(currentPage === 0) target = totalPages - 1;
+  else target = currentPage - 1;
+  setPage(target);
+  
+}
+
+function goToNextPage()
+{
+  let totalPages = informationArray.length;
+  let target = 0;
+  if(currentPage >= totalPages - 1) target = 0;
+  else target = currentPage + 1;
+  setPage(target);
+}
+
 
 function setSliders(currentPage) {
   if (currentPage === 0) {

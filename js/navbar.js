@@ -5,9 +5,9 @@ function addScrollEvent() {
     navBarColorMobile = document.getElementById("nav-color-mobile");
 
     window.addEventListener("scroll", function () {
-        if (this.window.pageYOffset > 0) {
-            navBarColor.style = "background-color: black;";
-            navBarColorMobile.style = "background-color: black;";
+        if (this.window.pageYOffset > 2) {
+            navBarColor.style = "background-color: rgba(10, 10, 10, 0.88);";
+            navBarColorMobile.style = "background-color: rgba(10, 10, 10, 0.88);";
         } else {
             navBarColor.style = "background-color: transparent;";
             navBarColorMobile.style = "background-color: transparent;";
