@@ -161,9 +161,10 @@ body {
   height: 75vh;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
+  background-color: black;
 }
+
 
 .fixed-socials {
   position: fixed;
@@ -192,6 +193,7 @@ body {
   background-color: gray;
   height: 7vh;
   width: 2px;
+  margin-left: 7.5px;
   font-size: 0;
 }
 
@@ -300,8 +302,12 @@ body {
   }
   .info
   {
-    margin-left: 15vw;
+    margin-left: 10vw;
+    max-width: 80vw;
+    word-wrap: break-word;
+    word-break: break-all;
   }
+
   .fixed-socials
   {
     width: 10vw;
