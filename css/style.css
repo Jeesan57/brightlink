@@ -26,6 +26,7 @@ body {
   display: flex;
   justify-content: center;
   color: white;
+
   
 }
 
@@ -253,15 +254,17 @@ body {
 
 .fixed-socials {
   position: fixed;
-  left: 4%;
-  width: 0%;
-  margin-top: 70vh;
+  height: 30vh;
+  width: max-content;
+  background-color: black;
   height: 20%;
+  left: 0%;
+  top: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  background-color: black;
+  align-items: center; 
+  padding-left: 30px;
 }
 
 .slider-identifier-container {
@@ -410,7 +413,5 @@ body {
   .sliders {
     display: none;
   }
-  .fixed-socials {
-    width: 20vw;
-  }
+
 }
