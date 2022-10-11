@@ -147,14 +147,22 @@ body {
 
 }
 
+.info
+{
+}
+
 .info-container 
 {
   min-width: 20vw;
   min-height: 20vh;
   color: white;
-  margin-left: 20vw;
+  align-items: center;
+  display: flex;
 }
 
+.info-primary
+{
+}
 
 
 #primary1
@@ -231,7 +239,7 @@ body {
 
 .sliders
 {
-  width: 100%;
+  width: 15vw;
   height: 75vh;
   display: flex;
   justify-content: center;
@@ -264,7 +272,7 @@ body {
   background-color: gray;
   height: 7vh;
   width: 2px;
-  font-size: 0;
+  /* font-size: 0; */
 }
 
 .slider-identifier-container p {
@@ -386,6 +394,10 @@ body {
   .secondary-link-container
   {
     margin-top: 10px;
+  }
+  .info
+  {
+    margin-left: 15vw;
   }
 }
 
