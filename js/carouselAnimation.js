@@ -346,7 +346,7 @@ let informationArray = [
     {
         title: "Komodo",
         secondaryCaption: "Indonesia",
-        description: "This is a random description for testing. We are currently describing something. Some facts. Some info. About Komodo",
+        description: "This is a random description for testing. We are currently describing something. Some facts. Some info. This is a random description for testing. We are currently describing something. Some facts. Some info. This is a random description for testing. We are currently describing something. Some facts. Some info. This is a random description for testing. We are currently describing something. Some facts. Some info. This is a random description for testing. We are currently describing something. Some facts. Some info. About Komodo",
         exploreLink: 'http://www.google.com/search?q=komodo',
         src: "./images/carousel/komodo.jpg",
         thumbnailSrc: "./images/carousel/komodo-c.jpg",
@@ -354,7 +354,7 @@ let informationArray = [
     {
         title: "Kerala",
         secondaryCaption: "India",
-        description: "This is a random description for testing. We are currently describing something. Some facts. Some info. About Kerala",
+        description: "This is a random description for testing. We are currently describing something. Some facts. Some info. This is a random description for testing. We are currently describing something. Some facts. Some info. This is a random description for testing. We are currently describing something. Some facts. Some info. This is a random description for testing. We are currently describing something. Some facts. Some info. This is a random description for testing. We are currently describing something. Some facts. Some info. About Kerala",
         exploreLink: 'http://www.google.com/search?q=Kerala',
         src: "./images/carousel/kerala.jpg",
         thumbnailSrc: "./images/carousel/kerala-c.jpg",
@@ -363,7 +363,7 @@ let informationArray = [
     {
         title: "Matterhorn",
         secondaryCaption: "Switzerland",
-        description: "This is a random description for testing. We are currently describing something. Some facts. Some info. About Matterhorn",
+        description: "This is a random description for testing. We are currently describing something. Some facts. Some info. This is a random description for testing. We are currently describing something. Some facts. Some info. This is a random description for testing. We are currently describing something. Some facts. Some info. This is a random description for testing. We are currently describing something. Some facts. Some info. This is a random description for testing. We are currently describing something. Some facts. Some info. About Matterhorn",
         exploreLink: 'http://www.google.com/search?q=Matterhorn',
         src: "./images/carousel/matterhorn.jpg",
         thumbnailSrc: "./images/carousel/matterhorn-c.jpg",
@@ -371,7 +371,7 @@ let informationArray = [
     {
         title: "Cappadocia",
         secondaryCaption: "Turkey",
-        description: "This is a random description for testing. We are currently describing something. Some facts. Some info. About Cappadocia",
+        description: "This is a random description for testing. We are currently describing something. Some facts. Some info. This is a random description for testing. We are currently describing something. Some facts. Some info. This is a random description for testing. We are currently describing something. Some facts. Some info. This is a random description for testing. We are currently describing something. Some facts. Some info. This is a random description for testing. We are currently describing something. Some facts. Some info. About Cappadocia",
         exploreLink: 'http://www.google.com/search?q=Cappadocia',
         src: "./images/carousel/cappadocia.jpg",
         thumbnailSrc: "./images/carousel/cappadocia-c.jpg",
@@ -379,7 +379,7 @@ let informationArray = [
     {
         title: "Malgovik",
         secondaryCaption: "Sweden",
-        description: "This is a random description for testing. We are currently describing something. Some facts. Some info. About Malgovik",
+        description: "This is a random description for testing. We are currently describing something. Some facts. Some info. This is a random description for testing. We are currently describing something. Some facts. Some info. This is a random description for testing. We are currently describing something. Some facts. Some info. This is a random description for testing. We are currently describing something. Some facts. Some info. This is a random description for testing. We are currently describing something. Some facts. Some info. About Malgovik",
         exploreLink: 'http://www.google.com/search?q=Malgovik',
         src: "./images/carousel/malgovik.jpg",
         thumbnailSrc: "./images/carousel/malgovik-c.jpg",
