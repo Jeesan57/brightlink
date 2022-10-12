@@ -1,19 +1,3 @@
-let slider = null;
-let primary1 = null;
-let primary2 = null;
-let secondaryLink = null;
-let description = null;
-let sliderImage = null;
-let navbarExpanded = null;
-let changeTime = 11;
-let currentPage = 0;
-let slider0 = null;
-let slider1 = null;
-let slider2 = null;
-let slider3 = null;
-let navBarColor = null;
-let navBarColorMobile = null;
-let currentPageElement = null;
 const informationArray = [
   {
     image: "./images/banner/international-movers.jpg",
@@ -48,6 +32,24 @@ const informationArray = [
     description: "4 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit vitae officiis, quod incidunt, ea, fugit dignissimos esse minima placeat nisi est distinctio tempore eveniet fugiat? Ullam eaque totam atque obcaecati? Tenetur doloremque et ex delectus error fuga quia aspernatur nobis!",
   },
 ];
+
+
+let slider = null;
+let primary1 = null;
+let primary2 = null;
+let secondaryLink = null;
+let description = null;
+let sliderImage = null;
+let navbarExpanded = null;
+let changeTime = 11;
+let currentPage = 0;
+let slider0 = null;
+let slider1 = null;
+let slider2 = null;
+let slider3 = null;
+let navBarColor = null;
+let navBarColorMobile = null;
+let currentPageElement = null;
 function addKeyFrames() {
   const keyFrames = document.createElement("style");
   keyFrames.innerHTML = `
