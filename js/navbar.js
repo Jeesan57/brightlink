@@ -1,9 +1,7 @@
 function addScrollEvent() {
-
     window.scrollTo(0, 0);
     navBarColor = document.getElementById("nav-color");
     navBarColorMobile = document.getElementById("nav-color-mobile");
-
     window.addEventListener("scroll", function () {
         if (this.window.pageYOffset > 2) {
             navBarColor.style = "background-color: rgba(10, 10, 10, 0.88);";
@@ -14,7 +12,6 @@ function addScrollEvent() {
         }
     });
 }
-
 function toggleNavButton() {
     navbarExpanded = document.getElementById("nav-expanded");
     if (navbarExpanded.classList.contains("hide")) {
@@ -25,5 +22,4 @@ function toggleNavButton() {
         navbarExpanded.style = "display: none;";
     }
 }
-
 addScrollEvent();
