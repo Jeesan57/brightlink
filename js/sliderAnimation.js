@@ -1,3 +1,4 @@
+/// information of the banner (slider)
 const informationArray = [
   {
     image: "./images/banner/international-movers.jpg",
@@ -34,6 +35,11 @@ const informationArray = [
 ];
 
 
+
+let changeTime = 11; // animation cycle
+let currentPage = 0;
+
+// elements
 let slider = null;
 let primary1 = null;
 let primary2 = null;
@@ -41,8 +47,6 @@ let secondaryLink = null;
 let description = null;
 let sliderImage = null;
 let navbarExpanded = null;
-let changeTime = 11;
-let currentPage = 0;
 let slider0 = null;
 let slider1 = null;
 let slider2 = null;
@@ -51,6 +55,8 @@ let navBarColor = null;
 let navBarColorMobile = null;
 let currentPageElement = null;
 
+
+// key frame for background and text animation
 function addKeyFrames() {
   const keyFrames = document.createElement("style");
   keyFrames.innerHTML = `
@@ -109,30 +115,10 @@ function addKeyFrames() {
   document.head.appendChild(keyFrames);
 }
 
-function defaultNavExpansion() {
-  navbarExpanded = document.getElementById("nav-expanded");
-  // if mobile screen
-  if (window.matchMedia("max-width: 980px")) {
-    // if hidden
-    if (navbarExpanded.classList.contains("hide")) {
-      navbarExpanded.style = "display: none;";
-    } else {
-      navbarExpanded.classList.add("hide");
-      navbarExpanded.style = "display: flex;";
-    }
-  }
-  // display always none in pc
-  else {
-    navbarExpanded.style = "display: none;";
-  }
-}
-function addMediaQuery() {
-  defaultNavExpansion();
-  window.addEventListener("resize", (event) => {
-    defaultNavExpansion();
-  });
-}
-// takes 0 to 3
+
+
+
+// sets the page
 function setPage(pageNumber) {
   currentPage = pageNumber;
   let information = informationArray[pageNumber];
@@ -145,16 +131,18 @@ function setPage(pageNumber) {
   }
   description.textContent = information.description;
 }
+
+// goes to prev page
 function goToPrevPage()
 {
-  console.log('aise');
   let totalPages = informationArray.length;
   let target = 0;
   if(currentPage === 0) target = totalPages - 1;
   else target = currentPage - 1;
   setPage(target);
-  
 }
+
+// goes to next page
 function goToNextPage()
 {
   let totalPages = informationArray.length;
@@ -163,6 +151,8 @@ function goToNextPage()
   else target = currentPage + 1;
   setPage(target);
 }
+
+// sets the sliders
 function setSliders(currentPage) {
   if (currentPage === 0) {
     slider0.style = "background-color: white;";
@@ -193,6 +183,8 @@ function setSliders(currentPage) {
     currentPageElement.textContent = "04";
   }
 }
+
+// start interval for changing page every ${changeTime} second
 function startInterval() {
   window.setInterval(function () {
     currentPage = (currentPage + 1) % informationArray.length;
@@ -200,6 +192,8 @@ function startInterval() {
     setSliders(currentPage);
   }, changeTime * 1000);
 }
+
+// intializing
 function main() {
   slider = document.getElementById("slider");
   primary1 = document.getElementById('primary1');
@@ -227,6 +221,5 @@ function main() {
   slider3.style = "background-color: #dbdbdb;";
   addKeyFrames();
   startInterval();
-  addMediaQuery();
 }
 main();

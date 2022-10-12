@@ -1,3 +1,4 @@
+// makes the nav bar black(ish) if page is scrolled
 function addScrollEvent() {
     window.scrollTo(0, 0);
     navBarColor = document.getElementById("nav-color");
@@ -12,6 +13,8 @@ function addScrollEvent() {
         }
     });
 }
+
+// functionality for exppanding the nav bar on mobile after clicking hamburger button
 function toggleNavButton() {
     navbarExpanded = document.getElementById("nav-expanded");
     if (navbarExpanded.classList.contains("hide")) {
@@ -22,4 +25,30 @@ function toggleNavButton() {
         navbarExpanded.style = "display: none;";
     }
 }
+
+function defaultNavExpansion() {
+    navbarExpanded = document.getElementById("nav-expanded");
+    // if mobile screen
+    if (window.matchMedia("max-width: 980px")) {
+        // if hidden
+        if (navbarExpanded.classList.contains("hide")) {
+            navbarExpanded.style = "display: none;";
+        } else {
+            navbarExpanded.classList.add("hide");
+            navbarExpanded.style = "display: flex;";
+        }
+    }
+    // display always none in pc
+    else {
+        navbarExpanded.style = "display: none;";
+    }
+}
+function addMediaQuery() {
+    defaultNavExpansion();
+    window.addEventListener("resize", (event) => {
+        defaultNavExpansion();
+    });
+}
+
+addMediaQuery();
 addScrollEvent();

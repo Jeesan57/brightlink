@@ -1,3 +1,4 @@
+// the information for the caraousel page is stored here
 let informationArray = [
     {
         title: "Komodo",
@@ -41,15 +42,22 @@ let informationArray = [
     },
 ];
 
+// varaibles that keep track of the animation state
 let animationRunning = false;
 let animationRunningMobile = false;
-let numberOfPages = 5;
+
+// number of pages that should be shown in the caraousel slider
+let numberOfPages = informationArray.length;
+
+// animates the background images
 function backgroundAnimation(element, time) {
     animationRunning = true;
     animationRunningMobile = true;
     var scaleDecrement = 1 / 700;
     var scale = 1.2;
     var instance = window.setInterval(function () {
+
+        // animates on the scale property (1.2 to 1)
         element.style.transform = 'scale(' + scale + ')';
         scale = scale - scaleDecrement;
         if (scale < 1) {
@@ -60,12 +68,16 @@ function backgroundAnimation(element, time) {
         }
     }, time)
 }
+
+// animates the height of a slider element 
 function heightAnimation(element, startingPercentage, endingPercentage, time) {
     animationRunning = true;
     animationRunningMobile = true;
+    // magic value : that looks good
     var increment = (endingPercentage - startingPercentage) / 25;
     var height = startingPercentage;
     var instance = window.setInterval(function () {
+        // animating on the height property (starting to ending percentage)
         element.style.height = `${height}%`;
         height = height + increment;
         if (height >= endingPercentage) {
@@ -76,7 +88,10 @@ function heightAnimation(element, startingPercentage, endingPercentage, time) {
         }
     }, time)
 }
+
+// animates the text
 function textAnimation(element, time) {
+    // animation done through css
     animationRunning = true;
     animationRunningMobile = true;
     element.classList.add('animate-text');
@@ -86,6 +101,8 @@ function textAnimation(element, time) {
         element.classList.remove('animate-text');
     }, time * 1000);
 }
+
+// animates the slidng of caraousel
 function slidingAnimation(current, target, time) {
     animationRunning = true;
     let activeContainers = [];
@@ -95,15 +112,19 @@ function slidingAnimation(current, target, time) {
     let imageContainers = document.querySelectorAll('.main .image-container');
     if (imageContainers) {
         for (let i = 0; i < imageContainers.length; i++) {
+            // moves all elements
             container.removeChild(imageContainers[i]);
         }
     }
+    // creates extra element on the right to move to
     for (let i = 0; i < numberOfPages * 2; i++) {
         let imageContainer = document.createElement("div");
         imageContainer.classList.add('image-container');
         let image = document.createElement('img');
+        // current + i - 1 => gives the correct information for the element
         image.src = informationArray[(current + i - 1) % numberOfPages].thumbnailSrc;
         image.onclick = function () {
+            // image click function
             setPage(((current + i - 1) % numberOfPages) + 1);
         };
         let caption = document.createElement('h1');
@@ -120,11 +141,11 @@ function slidingAnimation(current, target, time) {
         imageContainer.appendChild(image);
         container.appendChild(imageContainer);
     }
-    // let distance = 12.5 * places;
     var slided = 0;
+    //magic number (should be a devisor of 110)
     let stepDistance = 2;
-    // if(places > 2) stepDistance = 2;
-    // if(places > 3) stepDistance = 5;
+
+    // animation based on translateX (sliding)
     var instance = window.setInterval(function () {
         let images = document.querySelectorAll('.image-container img');
         let captions = document.querySelectorAll('.image-container .caption');
@@ -149,69 +170,8 @@ function slidingAnimation(current, target, time) {
         }
     }, time)
 }
-function slidingAnimation(current, target, time) {
-    animationRunning = true;
-    let activeContainers = [];
-    let { result: places, direction } = countPlaces(current, target); // how many places to slide
-    // var distance = places * 100;
-    let container = document.getElementById('images-container');
-    let imageContainers = document.querySelectorAll('.main .image-container');
-    if (imageContainers) {
-        for (let i = 0; i < imageContainers.length; i++) {
-            container.removeChild(imageContainers[i]);
-        }
-    }
-    for (let i = 0; i < numberOfPages * 2; i++) {
-        let imageContainer = document.createElement("div");
-        imageContainer.classList.add('image-container');
-        let image = document.createElement('img');
-        image.src = informationArray[(current + i - 1) % numberOfPages].thumbnailSrc;
-        image.onclick = function () {
-            setPage(((current + i - 1) % numberOfPages) + 1);
-        };
-        let caption = document.createElement('h1');
-        caption.textContent = informationArray[(current + i - 1) % numberOfPages].title;
-        caption.classList.add('caption');
-        let secondaryCaption = document.createElement('p');
-        secondaryCaption.textContent = informationArray[(current + i - 1) % numberOfPages].secondaryCaption;
-        secondaryCaption.classList.add('secondary-caption');
-        if (informationArray[(current + i - 1) % numberOfPages].thumbnailSrc === informationArray[target - 1].thumbnailSrc) {
-            activeContainers = [...activeContainers, imageContainer];
-        }
-        imageContainer.appendChild(caption);
-        imageContainer.appendChild(secondaryCaption);
-        imageContainer.appendChild(image);
-        container.appendChild(imageContainer);
-    }
-    // let distance = 12.5 * places;
-    var slided = 0;
-    let stepDistance = 2;
-    // if(places > 2) stepDistance = 2;
-    // if(places > 3) stepDistance = 5;
-    console.log(current);
-    var instance = window.setInterval(function () {
-        let images = document.querySelectorAll('.image-container img');
-        let captions = document.querySelectorAll('.image-container .caption');
-        let secondaryCaptions = document.querySelectorAll('.image-container .secondary-caption');
-        for (let i = 0; i < images.length; i++) {
-            images[i].style.transform = 'translateX(-' + slided + '%)';
-        }
-        for (let i = 0; i < captions.length; i++) {
-            captions[i].style.transform = 'translateX(-' + slided + '%)';
-        }
-        for (let i = 0; i < secondaryCaptions.length; i++) {
-            secondaryCaptions[i].style.transform = 'translateX(-' + slided + '%)';
-        }
-        slided = slided + stepDistance;
-        if (slided > places * 110) {
-            animationRunning = false;
-            for (let i = 0; i < activeContainers.length; i++) {
-                heightAnimation(activeContainers[i], 60, 80, 1);
-            }
-            window.clearInterval(instance);
-        }
-    }, time)
-}
+
+// similar to larger screens (just on different elements)
 function slidingAnimationMobile(current, target, time) {
     animationRunningMobile = true;
     let activeContainers = [];
@@ -259,6 +219,8 @@ function slidingAnimationMobile(current, target, time) {
         }
     }, time)
 }
+
+// gives the number of iteration to slide on slide started (by button click or image click)
 function countPlaces(current, target) {
     let result;
     let direction = 1;
@@ -273,6 +235,8 @@ function countPlaces(current, target) {
     }
     return { result, direction };
 }
+
+// sets the page for web
 function setPage(pageNumber) {
     if (animationRunning) return;
     let currentInformation = informationArray[pageNumber - 1];
@@ -302,6 +266,8 @@ function setPage(pageNumber) {
     activeButton.textContent = pageNumber;
     animationRunning = false;
 }
+
+// sets the page for mobile
 function setPageMobile(pageNumber) {
     let currentInformation = informationArray[pageNumber - 1];
     let backgroundImage = document.getElementById('mobile-main-image'); // get
@@ -329,6 +295,8 @@ function setPageMobile(pageNumber) {
     activeButton.textContent = pageNumber;
     animationRunningMobile = false;
 }
+
+// returns the current page number 
 function getCurrentPage() {
     let currentPage = 0;
     for (let i = 1; i <= numberOfPages; i++) {
@@ -340,6 +308,7 @@ function getCurrentPage() {
     }
     return currentPage;
 }
+// returns the current page number for mobile
 function getCurrentPageMobile() {
     let currentPage = 0;
     for (let i = 1; i <= numberOfPages; i++) {
@@ -351,7 +320,10 @@ function getCurrentPageMobile() {
     }
     return currentPage;
 }
+
 // 1 or -1 
+
+// used by right or left "move-button"
 function changeWithLeftRightButton(direction) {
     let currentPage = getCurrentPage();
     if (currentPage + direction <= 0) {
@@ -365,6 +337,7 @@ function changeWithLeftRightButton(direction) {
     }
 }
 // 1 or -1 
+// used by right or left "move-button" for mobile
 function changeWithLeftRightButtonMobile(direction) {
     let currentPage = getCurrentPageMobile();
     if (currentPage + direction <= 0) {
@@ -377,15 +350,19 @@ function changeWithLeftRightButtonMobile(direction) {
         setPageMobile(currentPage + direction);
     }
 }
+// functionality of explore button
 function goExplore() {
     let currentPage = getCurrentPage();
     let currentInformation = informationArray[currentPage - 1];
     window.location = currentInformation.exploreLink;
 }
+// functionality of explore button mobile
 function goExploreMobile() {
     let currentPage = getCurrentPageMobile();
     let currentInformation = informationArray[currentPage - 1];
     window.location = currentInformation.exploreLink;
 }
+
+// initially set the current page to the first page for mobile
 setPage(1);
 setPageMobile(1);
