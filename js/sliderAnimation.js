@@ -50,6 +50,7 @@ let slider3 = null;
 let navBarColor = null;
 let navBarColorMobile = null;
 let currentPageElement = null;
+
 function addKeyFrames() {
   const keyFrames = document.createElement("style");
   keyFrames.innerHTML = `
@@ -107,6 +108,7 @@ function addKeyFrames() {
 `;
   document.head.appendChild(keyFrames);
 }
+
 function defaultNavExpansion() {
   navbarExpanded = document.getElementById("nav-expanded");
   // if mobile screen
