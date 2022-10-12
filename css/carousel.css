@@ -298,16 +298,23 @@
 
   .line-control {
     flex-direction: row;
-    width: 100vw;
+    width: 50vw;
+    margin-left: 25vw;
+    left: 0;
   }
 
   .line {
-    width: 10vw;
+    width: 50%;
     height: 1px;
+    transform: translateX(100%);
+  }
+
+  .line:last-child {
+    height: 0px;
   }
 
   .line-button {
-    transform: scale(0.5) translateX(-50px) translateY(-25px);
+    transform: scale(0.5) translateX(-50px) translateY(-25px); 
   }
 
   .active {
