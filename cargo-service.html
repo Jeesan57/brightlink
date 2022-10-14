@@ -4,12 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preload" href="css/service.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/cargo-service.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="css/footer.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="css/navbar.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <link rel="stylesheet" href="css/fontello.css">
     <title>Document</title>
 </head>
@@ -23,9 +20,9 @@
             </div>
             <div class="right">
                 <ul>
-                    <li class="nav-item"><a href="https://www.brightlinkcargo.com" id="active" class="nav-link">HOME</a>
+                    <li class="nav-item"><a href="./index.html" class="nav-link">HOME</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="service">SERVICES</a></li>
+                    <li class="nav-item"><a class="nav-link"  id="active" href="./service.html">SERVICES</a></li>
                     <li class="nav-item"><a class="nav-link" href="free-moving-quote">MOVING QUOTE</a></li>
                     <li class="nav-item"><a class="nav-link" href="track">TRACK SHIPMENT</a></li>
                     <li class="nav-item"><a class="nav-link" href="testimonials">TESTIMONIALS</a></li>
@@ -55,9 +52,6 @@
                 </div>
                 <div class="line">
                     <button onclick="setPage(6)" class="line-button" id="line-button6">.</button>
-                </div>
-                <div class="line">
-                    <button onclick="setPage(7)" class="line-button" id="line-button7">.</button>
                 </div>
             </div>
             <div class="content">
@@ -95,9 +89,9 @@
     </div>
     <div id="nav-expanded" class="hide">
         <ul>
-            <li class="nav-item"><a href="https://www.brightlinkcargo.com" id="active" class="nav-link">HOME</a>
+            <li class="nav-item"><a href="./index.html"class="nav-link">HOME</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="service">SERVICES</a></li>
+            <li class="nav-item"><a class="nav-link" id="active"  href="./service.html">SERVICES</a></li>
             <li class="nav-item"><a class="nav-link" href="free-moving-quote">MOVING QUOTE</a></li>
             <li class="nav-item"><a class="nav-link" href="track">TRACK SHIPMENT</a></li>
             <li class="nav-item"><a class="nav-link" href="testimonials">TESTIMONIALS</a></li>
@@ -144,11 +138,16 @@
             <div class="line">
                 <button onclick="setPageMobile(6)" class="line-button" id="mobile-line-button6">.</button>
             </div>
-            <div class="line">
-                <button onclick="setPageMobile(7)" class="line-button" id="mobile-line-button7">.</button>
-            </div>
         </div>
     </div>
+
+    <div class="fixed-socials">
+        <a href="tel:+971581344800" class="float2" target="_blank" id="free_demo"><img src="images/bounce.svg"
+                class="fixed-image" id="bounce" alt="Telephone"> </a>
+        <a href="https://api.whatsapp.com/send?phone=971581344800" class="float1" target="_blank" id="free_demo"><img
+                class="fixed-image" src="images/whatsapp.svg" alt="Whatsapp"> </a>
+    </div>
+
     <!--Footer_Top Section-->
     <footer class="footer">
         <div class="container">
@@ -180,7 +179,7 @@
             <div class="footer-column">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="service">Services</a></li>
+                    <li><a href="./service.html">Services</a></li>
                     <li><a href="#about">About us</a></li>
                     <li><a href="testimonials">Testimonials</a></li>
                     <li><a href="sitemap">Sitemap</a></li>
@@ -214,7 +213,7 @@
                 <h4>Address</h4>
                 <address>
                     <p>
-                        <font color="#747d8c" size="2">BrightLink Cargo and Movers LLC<br>
+                        <font color="white" size="2">BrightLink Cargo and Movers LLC<br>
                             Al Asayel Street, Business Bay<br>
                             UAE, United Arab Emirates<br>
                             Tel: +971509664235
@@ -253,6 +252,6 @@
         </div>
     </div>
 </body>
-<script src="js/cargo.js"></script>
+<script src="js/service.js"></script>
 <script src="js/navbar.js"></script>
 </html>
