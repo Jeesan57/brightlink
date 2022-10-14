@@ -264,13 +264,13 @@ body {
   }
   .fixed-socials
   {
-    width: 50px;
-    padding: 0;
+    width: 10vw;
+    padding-left: 3px;
     left: 0%;    
   }
   .fixed-image
   {
-    width: 30px;
+    width: 9vw;
   }
   .slider-button-container
   {

@@ -424,12 +424,12 @@
   }
 
   .fixed-socials {
-    width: 50px;
+    width: 10vw;
     left: 0%;
-    padding-left: 10px;
+    padding-left: 3px;
   }
 
   .fixed-socials img {
-    width: 40px;
+    width: 9vw;
   }
 }
