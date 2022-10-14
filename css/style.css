@@ -264,9 +264,13 @@ body {
   }
   .fixed-socials
   {
-    width: 10vw;
-    left: 0%;
-    padding-left: 10px;
+    width: 50px;
+    padding: 0;
+    left: 0%;    
+  }
+  .fixed-image
+  {
+    width: 35px;
   }
   .slider-button-container
   {
