@@ -163,6 +163,7 @@
   min-height: max-content;
   overflow: hidden;
   display: none;
+  padding-bottom: 50px;
   
 }
 #title {
