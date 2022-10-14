@@ -95,7 +95,10 @@ body {
   align-items: center;
   gap: 10px;
   /* background:  radial-gradient(circle, rgba(27,27,27,1) 22%, rgba(0,0,0,1) 89%); */
-  background-color: #d9f1cd;
+  /* background-color: #d9f1cd; */
+  background-image: url('../images/about/about-bg.svg');
+  background-repeat: no-repeat;
+  background-position: center;
   color: black;
 }
 
@@ -107,6 +110,7 @@ body {
 }
 .about-title
 {
+  letter-spacing: .1rem;
   margin-top: 13vh;
 }
 .about-content-title
@@ -350,7 +354,7 @@ body {
   }
   .about-us
   {
-    min-height: 150vh;
+    min-height: 120vh;
   }
   .about-icon-bar
   {
