@@ -372,5 +372,6 @@ function goExploreMobile() {
 }
 
 // initially set the current page to the first page for mobile
+window.scrollTo(0, 0);
 setPage(1);
 setPageMobile(1);
