@@ -159,8 +159,10 @@
 .main-mobile {
   width: 100vw;
   height: 100vh;
+  min-width: max-content;
   overflow: hidden;
   display: none;
+  
 }
 #title {
   font-size: 45px;
