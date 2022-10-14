@@ -4,81 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BrightLink Cargo Movers | Movers & Packers, International Relocation</title>
-    <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="css/navbar.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/service.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="css/footer.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/navbar.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <link rel="stylesheet" href="css/fontello.css">
+    <title>Document</title>
 </head>
 <body>
-    <div class="banner">
-        <div id="slider">
-            <img src="images/movers/moving-and-storage.jpg" id="slider-image" />
-            <!-- <p id="slider-secondary-caption">Moving / CARGO / STORAGE</p>
-            <h1 id="slider-primary-caption">BRIGHTLINK CARGO MOVERS</h1> -->
-            <div class="info-container">
-                <div class="slider-button-container">
-                    <button class="move-button" onclick="goToPrevPage()">
+    <div class="main">
+        <div class="nav" id="nav-color">
+            <div class="left">
+                <a class="navbar-brand" href="https://www.brightlinkcargo.com">
+                    <img src="images/logo.png" height="24" width="139" alt="BrightLink Logo" title="BrightLink">
+                </a>
+            </div>
+            <div class="right">
+                <ul>
+                    <li class="nav-item"><a href="https://www.brightlinkcargo.com" id="active" class="nav-link">HOME</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="service">SERVICES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="free-moving-quote">MOVING QUOTE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="track">TRACK SHIPMENT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testimonials">TESTIMONIALS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="career">CAREER</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact">CONTACTS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <img id="main-image" src="images/cargo/cargo-service.jpg" />
+        <div class="container">
+            <div class="line-control">
+                <div class="line">
+                    <button onclick="setPage(1)" class="line-button active" id="line-button1">1</button>
+                </div>
+                <div class="line">
+                    <button onclick="setPage(2)" class="line-button" id="line-button2">.</button>
+                </div>
+                <div class="line">
+                    <button onclick="setPage(3)" class="line-button" id="line-button3">.</button>
+                </div>
+                <div class="line">
+                    <button onclick="setPage(4)" class="line-button" id="line-button4">.</button>
+                </div>
+                <div class="line">
+                    <button onclick="setPage(5)" class="line-button" id="line-button5">.</button>
+                </div>
+                <div class="line">
+                    <button onclick="setPage(6)" class="line-button" id="line-button6">.</button>
+                </div>
+            </div>
+            <div class="content">
+                <h1 id="title">
+                    Our Services
+                </h1>
+                <p id="description"></p>
+                <button class="explore-button" onclick="goExplore()">Read More</button>
+            </div>
+            <div>
+                <div class="images-container" id="images-container">
+                </div>
+                <div>
+                    <button class="move-button" onclick="changeWithLeftRightButton(-1)">
                         <i id="bars" class="icon-left-open" aria-hidden="true"></i>
                     </button>
-                </div>
-                <div class="sliders">
-                    <p id="current-page-number">01</p>
-                    <div class="slider-bar" id="slider0">.</div>
-                    <div class="slider-bar" id="slider1">.</div>
-                    <div class="slider-bar" id="slider2">.</div>
-                    <div class="slider-bar" id="slider3">.</div>
-                    <div class="slider-bar" id="slider4">.</div>
-                    <p>04</p>
-                </div>
-                <div class="info">
-                    <div class="info-primary">
-                        <h1 id="primary1">
-                            Moving and Storage
-                        </h1>
-                        <h1 id="primary2">
-                            BRIGHTLINK CARGO
-                        </h1>
-                    </div>
-                    <div class="info-secondary">
-                        <div class="secondary-link-container">
-                            <p id="secondary-link">link > </p>
-                        </div>
-                        <div class="secondary-description-container">
-                            <p id="secondary-description">
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-button-container">
-                    <button class="move-button" onclick="goToNextPage()">
+                    <button class="move-button" onclick="changeWithLeftRightButton(1)">
                         <i id="bars" class="icon-right-open" aria-hidden="true"></i>
                     </button>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="nav" id="nav-color">
-        <div class="left">
-            <a class="navbar-brand" href="https://www.brightlinkcargo.com">
-                <img src="images/logo.png" height="24" width="139" alt="BrightLink Logo" title="BrightLink">
-            </a>
-        </div>
-        <div class="right">
-            <ul>
-                <li class="nav-item"><a href="https://www.brightlinkcargo.com" id="active" class="nav-link">HOME</a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="service">SERVICES</a></li>
-                <li class="nav-item"><a class="nav-link" href="free-moving-quote">MOVING QUOTE</a></li>
-                <li class="nav-item"><a class="nav-link" href="track">TRACK SHIPMENT</a></li>
-                <li class="nav-item"><a class="nav-link" href="testimonials">TESTIMONIALS</a></li>
-                <li class="nav-item"><a class="nav-link" href="career">CAREER</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact">CONTACTS</a>
-                </li>
-            </ul>
         </div>
     </div>
     <div class="nav-mobile" id="nav-color-mobile">
@@ -93,12 +90,6 @@
             </a>
         </div>
     </div>
-    <div class="fixed-socials">
-        <a href="tel:+971581344800" class="float2" target="_blank" id="free_demo"><img src="images/bounce.svg"
-                class="fixed-image" id="bounce" alt="Telephone"> </a>
-        <a href="https://api.whatsapp.com/send?phone=971581344800" class="float1" target="_blank" id="free_demo"><img
-                class="fixed-image" src="images/whatsapp.svg" alt="Whatsapp"> </a>
-    </div>
     <div id="nav-expanded" class="hide">
         <ul>
             <li class="nav-item"><a href="https://www.brightlinkcargo.com" id="active" class="nav-link">HOME</a>
@@ -111,6 +102,46 @@
             <li class="nav-item"><a class="nav-link" href="contact">CONTACTS</a>
             </li>
         </ul>
+    </div>
+    <div class="main-mobile">
+        <img id="mobile-main-image" src="images/cargo/cargo-service.jpg" />
+        <div class="content">
+            <h1 id="mobile-title">
+                Our Services
+            </h1>
+            <p id="mobile-description"></p>
+            <button class="explore-button" onclick="goExploreMobile()">Read More</button>
+        </div>
+        <div class="images-container">
+            <button class="move-button" onclick="changeWithLeftRightButtonMobile(-1)">
+                <i id="bars" class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+            </button>
+            <div id="mobile-images-container" class="mobile-images-container">
+            </div>
+            <button class="move-button" onclick="changeWithLeftRightButtonMobile(1)">
+                <i id="bars" class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="line-control">
+            <div class="line">
+                <button onclick="setPageMobile(1)" class="line-button active" id="mobile-line-button1">1</button>
+            </div>
+            <div class="line">
+                <button onclick="setPageMobile(2)" class="line-button" id="mobile-line-button2">.</button>
+            </div>
+            <div class="line">
+                <button onclick="setPageMobile(3)" class="line-button" id="mobile-line-button3">.</button>
+            </div>
+            <div class="line">
+                <button onclick="setPageMobile(4)" class="line-button" id="mobile-line-button4">.</button>
+            </div>
+            <div class="line">
+                <button onclick="setPageMobile(5)" class="line-button" id="mobile-line-button5">.</button>
+            </div>
+            <div class="line">
+                <button onclick="setPageMobile(6)" class="line-button" id="mobile-line-button6">.</button>
+            </div>
+        </div>
     </div>
     <!--Footer_Top Section-->
     <footer class="footer">
@@ -216,6 +247,6 @@
         </div>
     </div>
 </body>
-<script src="js/main.js"></script>
+<script src="js/service.js"></script>
 <script src="js/navbar.js"></script>
 </html>
