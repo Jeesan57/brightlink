@@ -149,6 +149,7 @@ function goToPrevPage()
   if(currentPage === 0) target = totalPages - 1;
   else target = currentPage - 1;
   setPage(target);
+  setSliders(target);
 }
 
 // goes to next page
@@ -159,6 +160,7 @@ function goToNextPage()
   if(currentPage >= totalPages - 1) target = 0;
   else target = currentPage + 1;
   setPage(target);
+  setSliders(target);
 }
 
 // sets the sliders
@@ -200,8 +202,8 @@ function setSliders(currentPage) {
     slider1.style = "background-color: white;";
     slider2.style = "background-color: white;";
     slider3.style = "background-color: white;";
-    slider4.style = "background-color: #dbdbdb;";
-    currentPageElement.textContent = "04";
+    slider4.style = "background-color: white;";
+    currentPageElement.textContent = "05";
   }
 }
 
