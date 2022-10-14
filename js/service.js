@@ -7,6 +7,7 @@ let informationArray = [
         exploreLink: 'cargo-service',
         src: "./images/cargo/cargo-service.jpg",
         thumbnailSrc: "./images/cargo/cargo-service.jpg",
+        
     },
     {
         title: "Domestic Relocation",
@@ -375,3 +376,4 @@ function goExploreMobile() {
 window.scrollTo(0, 0);
 setPage(1);
 setPageMobile(1);
+

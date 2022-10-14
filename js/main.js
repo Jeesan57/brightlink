@@ -5,7 +5,7 @@ const informationArray = [
     primary1: "Moving & Storage",
     primary2: "BRIGHTLINK CARGO",
     secondaryLink: "About Us >",
-    secondaryLinkHref: "#about",
+    secondaryLinkHref: "about",
     description: "BrightLink Cargo and Movers is a UAE based shipping company specializes in cargo, moving and storage services. With strong presence in UAE, We have grown into one of the most promising logistics service providers in the region and the world at large.",
   },
   {
@@ -247,4 +247,21 @@ function main() {
   addKeyFrames();
   startInterval();
 }
+
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+
 main();
