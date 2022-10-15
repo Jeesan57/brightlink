@@ -248,10 +248,10 @@ function main() {
   startInterval();
 }
 
-function myFunction() {
+function readMoreOrLess() {
   var dots = document.getElementById("dots");
   var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
+  var btnText = document.getElementById("read-more-button");
 
   if (dots.style.display === "none") {
     dots.style.display = "inline";
