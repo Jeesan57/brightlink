@@ -253,8 +253,6 @@ function readMoreOrLess() {
   var moreText = document.getElementById("more");
   var btnText = document.getElementById("read-more-button");
 
-  let aboutSection = document.getElementById("about");
-
   if (dots.style.display === "none") {
     dots.style.display = "inline";
     btnText.innerHTML = "Read more";

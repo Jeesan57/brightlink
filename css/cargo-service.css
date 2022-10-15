@@ -226,7 +226,6 @@
 
 
 .cargo-service {
-    height: 60vh;
     min-height: max-content;
     color: white;
     display: flex;
@@ -490,9 +489,5 @@
 
     .fixed-socials img {
         width: 9vw;
-    }
-
-    .cargo-service {
-        height: 120vh;
     }
 }
