@@ -9,7 +9,6 @@
     <link rel="preload" href="css/footer.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
     <link rel="preload" href="css/navbar.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="css/quick-link-section.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="css/fontello.css">
     <title>Document</title>
 </head>
@@ -63,7 +62,7 @@
                     Our Services
                 </h1>
                 <p id="description"></p>
-                <button class="explore-button" onclick="goExplore()">Read More</button>
+                <button class="explore-button" onclick="goExplore()">Explore</button>
             </div>
             <div>
                 <div class="images-container" id="images-container">
@@ -158,11 +157,11 @@
 
     <!-- cargo services section -->
     <div class="cargo-service">
-        <h1 class="cargo-title">
+        <h1 class="cargo-title" id="cargo-title">
             Cargo Services
         </h1>
         <!-- <img class="about-logo" src="images/logo.png" height="24" width="139" alt="BrightLink Logo" title="BrightLink"> -->
-        <p1 class="cargo-content">
+        <p1 class="cargo-content" id="cargo-content">
             Looking for best and affordable international Cargo Company in United Arab Emirates -
             UAE?. BrightLink Cargo UAE with its specialized transport vehicles, online and offline tracking system,
             and nationwide and international coverage allows us to offer a whole range of professional cargo
@@ -179,7 +178,10 @@
 
 
         </p1>
-        <button class="cargo-button">Explore Services</button>
+        <button class="cargo-button"><a href="#explore">
+                Explore Services
+            </a>
+        </button>
     </div>
 
 
@@ -296,7 +298,7 @@
         </div>
     </div>
 </body>
-<script src="js/service.js"></script>
+<script src="js/cargo.js"></script>
 <script src="js/navbar.js"></script>
 
 </html>

@@ -272,6 +272,16 @@
     color: white;
     background-color: #0E95FE;
 }
+.cargo-button a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.cargo-button a:hover
+{
+    color: white;
+}
 
 
 .fixed-socials {

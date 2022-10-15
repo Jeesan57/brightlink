@@ -1,60 +1,62 @@
+
+
+
 // the information for the caraousel page is stored here
 let informationArray = [
     {
         title: "Cargo Services",
         secondaryCaption: "Shipping Services",
         description: "Looking for best and affordable international Cargo Company in UAE?. BrightLink Cargo with its specialized transport vehicles, online and offline tracking system, and nationwide and international coverage allows us to offer a whole range of professional cargo transportation solutions.",
-        exploreLink: 'cargo-service',
+        longDescription: "Looking for best and affordable international Cargo Company in United Arab Emirates - UAE?. BrightLink Cargo UAE with its specialized transport vehicles, online and offline tracking system, and nationwide and international coverage allows us to offer a whole range of professional cargo transportation solutions. Our incredible Cargo services in UAE and across the UAE have earned us tremendous reputation for being cost effective, safe, reliable and innovative. BrightLink Cargo provide its innovative cost-effective Cargo Service to Europe, America, Asia, Middle East, Africa and worldwide. Though we are based in UAE, our international presence in the world’s most important cities and commercial hubs is flatteringly complemented by a global network of overseas agents. We always pay extra attention to ship the goods safely and securely to their intended destinations in a timely manner.",
+        exploreLink: '#',
         src: "./images/cargo/cargo-service.jpg",
         thumbnailSrc: "./images/cargo/cargo-service.jpg",
+
     },
     {
-        title: "Door To Door Cargo",
-        secondaryCaption: "Door Delivery",
+        title: "Domestic Relocation",
+        secondaryCaption: "Local Moving",
         description: "Planning to move your house or office and looking for best professional and affordable Local Moving or Commercial Moving Company in UAE? then you are at right place. The Moving or Relocation processes whether for local or domestic environments have always been stressful and arduous for many companies, individuals and families.",
-        exploreLink: 'cargo-service#door',
-        src: "./images/cargo/door-to-door-cargo.jpg",
-        thumbnailSrc: "./images/cargo/door-to-door-cargo.jpg",
+        longDescription: "Planning to move your house or office and looking for best professional and affordable Local Moving or International Moving Company in United Arab Emirates - UAE? then you are at right place. The Moving or Relocation processes whether for local or domestic environments have always been stressful and arduous for many companies, individual people and families. BrightLink Movers in UAE brings a refreshing change to the existing dilemma. Founded in 2013, we have grown into an experienced and customer friendly organization focused on providing our clients with the best moving and Relocation Services in UAE. Many clients have specific and detailed requirements on moving and our professional moving consultants provide smart, interactive and personalized service. We do this by using a variety of methods that ensure that the moving and relocation process occurs without any interruptions or discomfort during the moving process.",
+        exploreLink: '#',
+        src: "./images/movers/movers-and-packers.jpg",
+        thumbnailSrc: "./images/movers/movers-and-packers.jpg",
     },
     {
-        title: "Air Cargo",
-        secondaryCaption: "Air Freight",
+        title: "International Movers",
+        secondaryCaption: "International Moving",
         description: "BrightLink International Movers is a professional International Moving Company in UAE, and with years of experience we have performed numerous International Relocation from UAE to almost every part of the world.",
-        exploreLink: 'cargo-service#air',
-        src: "./images/cargo/air-freight.jpg",
-        thumbnailSrc: "./images/cargo/air-freight.jpg",
+        longDescription: "Looking for best affordable International Movers in UAE?. BrightLink International Movers is a professional International Moving Company in UAE, and with years of experience we have performed numerous International Relocation from UAE to almost every part of the world. Moving personal belongings, household goods, furniture’s and very sensitive equipment over long distances and globally can be stressful due to handling, transportation, customs clearance, documentation, and security risks involved but we at BrightLink International Movers UAE provide a flawless door to door International Relocation service and till destination port service, with all these services under one roof customer can choose what service is best for their needs. We execute our International Moving task masterfully from the professional packing to shipping by sea/air/land along with customs clearance, delivery, and unpacking, furniture assembly and removals of debris at your desired destination. Our Expert international relocation consultants are dedicated to every single one of the above processes to ensure impeccable product handling, transfer, and delivery to your destination.",
+        exploreLink: '#',
+        src: "./images/movers/international-movers.jpg",
+        thumbnailSrc: "./images/movers/international-movers.jpg",
     },
     {
-        title: "Sea Cargo",
-        secondaryCaption: "Sea Freight",
+        title: "Self Storage",
+        secondaryCaption: "Storage Services",
         description: "BrightLink Storage is one of the best Storage and Warehousing services provider in UAE. We provide Long-term and Short-term Storage services for Household Furniture, and Commercial Goods.",
-        exploreLink: 'cargo-service#sea',
-        src: "./images/cargo/shipping-service.jpg",
-        thumbnailSrc: "./images/cargo/shipping-service.jpg",
+        longDescription: "Looking for professional and affordable Storage Company in United Arab Emirates - UAE?. BrightLink Cargo and Movers UAE is one of the best Storage and Warehousing services provider in UAE. We provide Long-term and Short-term Storage service for Household goods, Furnitures, Personal Effects, Industrial, Business and Commercial Goods. We have a fully automated Storage and Warehousing facility making us the most advanced Storage and Warehousing Service provider in UAE. Our wide range of storage options includes Self Storage, Loose Storage, Wooden or Steel Containerized Storage, Palletized Storage, Furniture Storage, Personal Effects Storage, Perishable and Non-Perishable Goods Storage, Dangerous Goods storage, and a fully functional document archiving facility. We provide both long-term and short-term storage facilities for all purposes. Our skilled management team can cater to all your warehousing needs like a pro. We also provide Storage Packing, pick-up and delivery services for all your storage goods.",
+        exploreLink: '#',
+        src: "./images/storage/storage-service.jpg",
+        thumbnailSrc: "./images/storage/storage-service.jpg",
     },
     {
-        title: "Land Cargo",
-        secondaryCaption: "Land Transportation",
+        title: "Packing Services",
+        secondaryCaption: "Packaging Services",
         description: "BrightLink Movers and Packers as the name suggests we pack, deliver, store and transport any goods on a daily basis. Over the years we have packed thousands of goods and owing to that we have solutions for all possible problems that one can encounter during packing.",
-        exploreLink: 'cargo-service#land',
-        src: "./images/cargo/land-transportation.jpg",
-        thumbnailSrc: "./images/cargo/land-transportation.jpg",
+        longDescription: "Looking for Packing Service in UAE?. BrightLink Movers and Packers as the name suggests we pack, deliver, store and transport any goods on a daily basis. Over the years we have packed thousands of goods and owing to that we have solutions for all possible problems that one can encounter during packing. Our Packing Service in UAE provide complete packing solution for any kinds and types of goods, we pack both commercial and household goods as per clients requirements and use different Packing Materials for different types of goods like packing with plastic sheets, foam sheets, boxes, bags, stretch films, corrugated roll, bubble wrap, cling wrap and much more.",
+        exploreLink: '#',
+        src: "./images/packing/packing-service.jpg",
+        thumbnailSrc: "./images/packing/packing-service.jpg",
     },
     {
-        title: "Project Cargo",
-        secondaryCaption: "Breakbulk Shipping",
+        title: "Furniture Installation",
+        secondaryCaption: "Furniture Assembly",
         description: "BrightLink Furniture Installation is undoubtedly the most reliable name for Furniture Installation service in UAE. We credit this achievement to our skilled professionals who have mastered the skills necessary to install and assemble couple of furniture within a few hours and also can undertake large quantity Furniture Assembly with given time.",
-        exploreLink: 'cargo-service#project',
-        src: "./images/cargo/project-cargo.jpg",
-        thumbnailSrc: "./images/cargo/project-cargo.jpg",
-    },
-    {
-        title: "Vehicle Shipping",
-        secondaryCaption: "Car Shipping",
-        description: "BrightLink Furniture Installation is undoubtedly the most reliable name for Furniture Installation service in UAE. We credit this achievement to our skilled professionals who have mastered the skills necessary to install and assemble couple of furniture within a few hours and also can undertake large quantity Furniture Assembly with given time.",
-        exploreLink: 'cargo-service#vehicle',
-        src: "./images/cargo/vehicle-shipping.jpg",
-        thumbnailSrc: "./images/cargo/vehicle-shipping.jpg",
+        longDescription: "Looking for best and professional Furniture Fixing Service in UAE?. BrightLink Furniture Installation UAE is undoubtedly the most reliable name for Furniture Installation service in UAE. We credit this achievement to our skilled professionals who have mastered the skills necessary to install and Assemble Couple of Furniture within a few hours and also can undertake large quantity Furniture Assembly with given time. We understand the importance of accurate furniture installation as it turns an empty and lifeless house, office, hotels or building to a home or workplace filled with warmth and joy. Our professional furniture fixing carpenters are available round the clock and will get the work done perfectly and on time. Be it kitchen, hall, living room, bedroom, office or the entire home, hotel or building our wide range of services caters to all purposes.",
+        exploreLink: '#',
+        src: "./images/installation/furniture-installation.jpg",
+        thumbnailSrc: "./images/installation/furniture-installation.jpg",
     },
 ];
 
@@ -264,6 +266,14 @@ function setPage(pageNumber) {
     let mainTitle = document.getElementById("title"); // get
     mainTitle.textContent = currentInformation.title; // change the title
     textAnimation(mainTitle, 1);
+
+
+    let cargoTitle = document.getElementById("cargo-title");
+    cargoTitle.textContent = currentInformation.title; // change the title
+
+    let cargoContent = document.getElementById("cargo-content");
+    cargoContent.textContent = currentInformation.longDescription; // change the title
+
     let descriptionElement = document.getElementById("description"); // get
     descriptionElement.textContent = currentInformation.description; // change the title
     textAnimation(description, 1);
@@ -292,6 +302,13 @@ function setPageMobile(pageNumber) {
     let mainTitle = document.getElementById("mobile-title"); // get
     mainTitle.textContent = currentInformation.title; // change the title
     textAnimation(mainTitle, 1);
+
+    let cargoTitle = document.getElementById("cargo-title");
+    cargoTitle.textContent = currentInformation.title; // change the title
+
+    let cargoContent = document.getElementById("cargo-content");
+    cargoContent.textContent = currentInformation.longDescription; // change the title
+
     let descriptionElement = document.getElementById("mobile-description"); // get
     descriptionElement.textContent = currentInformation.description; // change the title
     textAnimation(descriptionElement, 1);
@@ -380,5 +397,8 @@ function goExploreMobile() {
 }
 
 // initially set the current page to the first page for mobile
+window.scrollTo(0, 0);
 setPage(1);
 setPageMobile(1);
+
+
