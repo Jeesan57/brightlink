@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -34,12 +34,11 @@ body {
   position: absolute;
   opacity: 0.2;
   filter: contrast(100%);
-    
-    height: 100%;
-    width: 100%;
+
+  height: 100%;
+  width: 100%;
 }
-.info-container 
-{
+.info-container {
   min-width: 20vw;
   min-height: 20vh;
   color: white;
@@ -54,70 +53,64 @@ body {
   border: none;
   font-size: 20px;
 }
-.info
-{
+.info {
   flex-grow: 1;
 }
-.slider-button-container
-{
+.slider-button-container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 7.5vw;
   height: 100%;
 }
-#primary1
-{
+#primary1 {
   color: transparent;
-  font-family: 'Urbanist', sans-serif;
+  font-family: "Urbanist", sans-serif;
   font-size: 80px;
-  letter-spacing: -.3rem;
+  letter-spacing: -0.3rem;
   -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
 }
-#primary2
-{
+#primary2 {
   color: white;
-  font-family: 'Urbanist', sans-serif;
+  font-family: "Urbanist", sans-serif;
   font-size: 60px;
   letter-spacing: -1px;
-  letter-spacing: -.3rem;
+  letter-spacing: -0.3rem;
 }
 
-.about-us
-{
-  height: 90vh;
+.about-us {
+ 
+  position: relative;
   min-height: max-content;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  /* color: white; */
-  /* background:  radial-gradient(circle, rgba(27,27,27,1) 22%, rgba(0,0,0,1) 89%); */
-  background-image: url('../images/about/about-bg.svg');
+  background-image: url("../images/about/about-bg.svg");
   background-repeat: no-repeat;
   background-position: center;
   color: black;
 }
 
-.about-us > *
-{
+.about-us > * {
   max-width: 80vw;
-  font-family: 'Manrope', sans-serif ;
+  font-family: "Manrope", sans-serif;
   font-weight: bold;
+
 }
-.about-title
-{
-  letter-spacing: .1rem;
+.about-description{
+  font-size: inherit;
+}
+.about-title {
+  letter-spacing: 0.1rem;
   margin-top: 13vh;
 }
-.about-content-title
-{
+.about-content-title {
   margin-top: 5vh;
 }
-.about-button
-{
+.about-button {
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 10px;
@@ -125,22 +118,28 @@ body {
   border-radius: 7px;
   border: none;
   outline: none;
-  background-color: #d9f1ce;
+  background-color: #c7eeb5;
   color: black;
-  transition: background-color, color .5s;
+  transition: background-color, color 0.5s;
   cursor: pointer;
+  
 }
-.about-button:hover
-{
+#read-more-button {
+  position: relative;
+  top: 5%;
+  
+}
+.about-button:hover {
   color: white;
-  background-color: #0E95FE;
+  background-color: #0e95fe;
 }
-#more{
+#more {
   display: none;
 }
-.about-icon-bar
-{
+
+.about-icon-bar {
   margin-top: 100px;
+  margin-bottom: 100px;
   width: 80vw;
   height: 100px;
   min-height: max-content;
@@ -148,8 +147,7 @@ body {
   grid-template-columns: repeat(7, 1fr);
 }
 
-.about-icon
-{
+.about-icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -157,39 +155,35 @@ body {
   text-align: center;
   margin-bottom: 10px;
 }
-.about-icon-image
-{
+.about-icon-image {
   width: 50px;
   height: 50px;
   margin-bottom: 5px;
+ 
 }
 
-.info-secondary
-{
+.info-secondary {
   display: flex;
 }
-.secondary-link-container
-{
+.secondary-link-container {
   width: max-content;
   margin-top: 40px;
 }
-#secondary-link
-{
+#secondary-link {
   color: white;
   padding-right: 10vw;
   text-decoration: none;
-  font-family: 'Manrope', sans-serif ;
+  font-family: "Manrope", sans-serif;
   font-weight: bolder;
   margin-left: 5px;
   font-size: 15px;
   cursor: pointer;
 }
-.secondary-description-container
-{
+.secondary-description-container {
   margin-top: 40px;
   max-width: 25vw;
   font-weight: 100;
-  font-family: 'Manrope', sans-serif ;
+  font-family: "Manrope", sans-serif;
   font-size: 16px;
 }
 #slider-secondary-caption {
@@ -203,8 +197,7 @@ body {
   width: 50px;
   aspect-ratio: 1;
 }
-.sliders
-{
+.sliders {
   width: 15vw;
   height: 75vh;
   display: flex;
@@ -221,7 +214,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   padding-left: 30px;
 }
 .slider-identifier-container {
@@ -317,52 +310,42 @@ body {
     letter-spacing: 1px;
     line-height: 36px;
   }
-  #primary1
-  {
+  #primary1 {
     font-size: 50px;
     letter-spacing: 0px;
   }
-  #primary2
-  {
+  #primary2 {
     font-size: 34px;
     letter-spacing: 0px;
   }
-  .secondary-description-container
-  {
+  .secondary-description-container {
     display: none;
   }
-  .secondary-link-container
-  {
+  .secondary-link-container {
     margin-top: 10px;
   }
-  .info
-  {
+  .info {
     margin-left: 10vw;
     max-width: 80vw;
     word-wrap: break-word;
     word-break: break-all;
   }
-  .fixed-socials
-  {
+  .fixed-socials {
     width: 10vw;
     padding-left: 3px;
-    left: 0%;    
+    left: 0%;
   }
-  .fixed-image
-  {
+  .fixed-image {
     width: 9vw;
   }
-  .slider-button-container
-  {
+  .slider-button-container {
     width: 15vw;
   }
-  .about-us
-  {
-    min-height: 120vh;
-    text-align:justify;
+  .about-us {
+    /* min-height: 120vh; */
+    text-align: justify;
   }
-  .about-icon-bar
-  {
+  .about-icon-bar {
     min-height: 300px;
     grid-template-columns: 1fr 1fr 1fr;
   }
