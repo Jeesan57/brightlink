@@ -473,6 +473,6 @@ function readMoreOrLess() {
     } else {
         dots.style.display = "none";
         exploreButton.innerHTML = "Read Less";
-        content.textContent = informationArray[page].textSectionDescription + "uhu";
+        content.textContent = informationArray[page].textSectionDescription;
     }
 }
