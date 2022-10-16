@@ -433,12 +433,12 @@ setPageMobile(1);
 function getLessText(textSectionDescription)
 {
     let LessText = "";
-    let maxWords = 44;
+    let maxWords = 7;
     let currentWords = 0;
     for(let i = 0; i < textSectionDescription.length; i++)
     {
         if(currentWords >= maxWords) break;
-        if(textSectionDescription[i] === ' ') currentWords++;
+        if(textSectionDescription[i] === '.') currentWords++;
         LessText += textSectionDescription[i];
     }
     return LessText;
