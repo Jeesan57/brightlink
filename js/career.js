@@ -39,12 +39,7 @@ function addKeyFrames() {
 
 
 
-// start interval for changing page every ${changeTime} second
 function startInterval() {
-    // window.setInterval(function () {
-    //     let primaryText = document.getElementById("banner-primary-text");
-    //     primaryText.textContent =   (primaryText.textContent === "CAREER") ? "JOB VACANCIES" : "CAREER";
-    // }, changeTime * 1000);
     addKeyFrames();
 }
 
