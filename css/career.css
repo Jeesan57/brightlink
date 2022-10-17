@@ -151,6 +151,63 @@ body {
     letter-spacing: .2rem;
 }
 
+.grid-container {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: grey;
+    font-weight: 300;
+    width: 50vw;
+    padding: 10px;
+  }
+  
+  .grid-container .file-container {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+  }
+  
+  .grid-container input {
+    border: none;
+    outline: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ced4da;
+    height: 40px;
+  }
+  
+  .grid-container input[type="file"] {
+    width: max-content;
+    height: max-content;
+  }
+  
+  .grid-container select {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 40px;
+  }
+  
+  .grid-container label {
+    display: flex;
+    text-align: left;
+    font-size: medium;
+    color: #fff;
+  }
+  
+  .grid-container #long-grid {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-size: 15px;
+    color: #fff;
+  }
+  
+
 
 
 @media (max-width: 575px) {
