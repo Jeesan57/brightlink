@@ -41,6 +41,7 @@ body {
 }
 
 @-webkit-keyframes bounce {
+
   0%,
   100%,
   20%,
@@ -74,6 +75,7 @@ body {
 }
 
 @keyframes bounce {
+
   0%,
   100%,
   20%,
@@ -122,10 +124,6 @@ body {
   height: 100vh;
   max-height: 100vh;
   max-width: 100vw;
-  background-image: url("../images/moving-and-storage.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,18 +131,41 @@ body {
   color: white;
   word-wrap: break-word;
   overflow-x: hidden;
+  position: relative;
+
+}
+
+
+.career-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  background: url("../images/moving-and-storage.jpg") no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+  filter: contrast(90%);
+
 }
 
 #banner-secondary-text {
   transform: translateY(-30px);
   font-size: 20px;
   letter-spacing: 0.1rem;
+  z-index: 15;
 }
 
 #banner-primary-text {
   font-size: 60px;
   font-weight: 400;
   letter-spacing: 0.2rem;
+  z-index: 15;
 }
 
 .main-section {
@@ -153,10 +174,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   padding-top: 20px;
   padding-bottom: 20px;
   position: relative;
 }
+
 .main-section::before {
   content: "";
   position: absolute;
@@ -174,13 +197,46 @@ body {
   filter: contrast(50%);
 }
 
+.main-section .content {
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  width: 70vw;
+  max-width: 70vw;
+  flex-direction: column;
+  color: white;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.main-content-title {
+  letter-spacing: .2rem;
+  font-size: 1.5em;
+}
+
+.main-content-text {
+  margin-top: 3vh;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 100;
+
+}
+
+.main-content-text a {
+  color: #0e95fe;
+  text-decoration: none;
+}
+
+
 .grid-container {
   display: grid;
   gap: 30px;
   grid-template-columns: 1fr 1fr 1fr;
   background-color: transparent;
   font-weight: 300;
-  width: 50vw;
+  width: 70vw;
   padding: 10px;
   z-index: 10;
 }
@@ -190,7 +246,7 @@ body {
   background-color: white;
   display: flex;
   align-items: center;
-  height: 40px;
+  height: 35px;
   border: 1px solid #ced4da;
   color: #525252;
 }
@@ -203,7 +259,7 @@ body {
   justify-content: center;
   align-items: center;
   border: 1px solid #ced4da;
-  height: 40px;
+  height: 35px;
   padding-left: 5px;
 }
 
@@ -218,7 +274,7 @@ body {
   border: none;
   outline: none;
   width: 100%;
-  height: 40px;
+  height: 35px;
   background-color: white;
   color: #525252;
   padding-left: 5px;
@@ -231,6 +287,7 @@ body {
   color: #fff;
   font-family: "Dm Sans", sans-serif;
   font-size: 1rem;
+  margin-bottom: 5px;
 }
 
 .grid-container #long-grid {
@@ -245,6 +302,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
 .submit-button-container input {
   width: max-content;
   height: max-content;
@@ -260,21 +318,65 @@ body {
   font-family: "Dm Sans", sans-serif;
   transform: translateX(10px);
 }
-.require-prompt
-{
+
+.require-prompt {
   display: flex;
   gap: 5px;
 }
-#text-area{
+
+#text-area {
   min-width: 100%;
   max-width: 100%;
   box-sizing: content-box;
   border: none;
   outline: none;
-  min-height: 40px;
+  min-height: 35px;
   padding: 4px;
 }
 
+.link-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100vw;
+
+}
+
+.link-box::before {
+  content: "";
+  position: fixed;
+  top: 70vh;
+  left: 35vw;
+  width: 30vw;
+  height: 28vh;
+  background: url("../images/about/about-bg.svg") no-repeat center center;
+  background-size: 30vw 28vh;
+  z-index: -1;
+
+
+}
+
+.link-box 
+{
+  text-align: center;
+}
+
+.link-box p 
+{
+  font-weight: 300;
+  letter-spacing: 0.6px;
+  line-height: 24px;
+}
+.link-box a {
+  color: #0e95fe;
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 5px;
+  margin-left: 5px;
+  font-weight: 100;
+}
 
 @media (max-width: 575px) {
   #banner-secondary-text {
@@ -289,6 +391,12 @@ body {
     display: flex;
     flex-direction: column;
     min-height: max-content;
-    width: 80vw;
+    width: 90vw;
+  }
+
+  .main-section .content {
+    width: 90vw;
+    min-width: 90vw;
+    max-width: 90vw;
   }
 }
