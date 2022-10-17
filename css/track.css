@@ -1,0 +1,402 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Dm Sans", sans-serif;
+    border-radius: .25rem;
+  }
+  
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    max-width: 100vw;
+  }
+  
+  .fixed-socials {
+    position: fixed;
+    height: 30vh;
+    width: max-content;
+    height: 20%;
+    left: 0%;
+    top: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    z-index: 100;
+  }
+  
+  .fixed-image {
+    margin-bottom: 30px;
+    width: 50px;
+    aspect-ratio: 1;
+  }
+  
+  #bounce {
+    bottom: 150px;
+    animation: bounce 4s infinite alternate;
+    border-radius: 50%;
+    box-shadow: 0 0 17px 7px #7ad4f6;
+  }
+  
+  @-webkit-keyframes bounce {
+  
+    0%,
+    100%,
+    20%,
+    53%,
+    80% {
+      -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  
+    40%,
+    43% {
+      -webkit-transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -webkit-transform: translate3d(0, -30px, 0);
+      transform: translate3d(0, -30px, 0);
+    }
+  
+    70% {
+      -webkit-transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -webkit-transform: translate3d(0, -15px, 0);
+      transform: translate3d(0, -15px, 0);
+    }
+  
+    90% {
+      -webkit-transform: translate3d(0, -4px, 0);
+      transform: translate3d(0, -4px, 0);
+    }
+  }
+  
+  @keyframes bounce {
+  
+    0%,
+    100%,
+    20%,
+    53%,
+    80% {
+      -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  
+    40%,
+    43% {
+      -webkit-transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -webkit-transform: translate3d(0, -30px, 0);
+      transform: translate3d(0, -30px, 0);
+    }
+  
+    70% {
+      -webkit-transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -webkit-transform: translate3d(0, -15px, 0);
+      transform: translate3d(0, -15px, 0);
+    }
+  
+    90% {
+      -webkit-transform: translate3d(0, -4px, 0);
+      transform: translate3d(0, -4px, 0);
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .fixed-socials {
+      width: 10vw;
+      padding-left: 3px;
+      left: 0%;
+    }
+  
+    .fixed-image {
+      width: 9vw;
+    }
+  }
+  
+  .career-banner {
+    height: 100vh;
+    max-height: 100vh;
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    word-wrap: break-word;
+    overflow-x: hidden;
+    position: relative;
+  
+  }
+  
+  
+  .career-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background: url("../images/moving-and-storage.jpg") no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  
+    filter: contrast(90%);
+  
+  }
+  
+  #banner-secondary-text {
+    transform: translateY(-30px);
+    font-size: 20px;
+    letter-spacing: 0.1rem;
+    z-index: 15;
+  }
+  
+  #banner-primary-text {
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    z-index: 15;
+  }
+  
+  .main-section {
+    background-color: transparent;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  
+  .main-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  
+    background: url("../images/moving-quote.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 5;
+    filter: contrast(50%);
+  }
+  
+  .main-section .content {
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    width: 70vw;
+    max-width: 70vw;
+    flex-direction: column;
+    color: white;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+  }
+  
+  .main-content-title {
+    letter-spacing: .2rem;
+    font-size: 1.5em;
+  }
+  
+  .main-content-text {
+    margin-top: 3vh;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 100;
+  
+  }
+  
+  .main-content-text a {
+    color: #0e95fe;
+    text-decoration: none;
+  }
+  
+  
+  .grid-container {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: transparent;
+    font-weight: 300;
+    width: 70vw;
+    padding: 10px;
+    z-index: 10;
+  }
+  
+  .grid-container .file-container {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    height: 35px;
+    border: 1px solid #ced4da;
+    color: #525252;
+  }
+  
+  .grid-container input {
+    border: none;
+    outline: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ced4da;
+    height: 35px;
+    padding-left: 5px;
+  }
+  
+  .grid-container input[type="file"] {
+    width: max-content;
+    height: max-content;
+    color: #525252;
+    border: none;
+  }
+  
+  .grid-container select {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 35px;
+    background-color: white;
+    color: #525252;
+    padding-left: 5px;
+  }
+  
+  .grid-container label {
+    display: flex;
+    text-align: left;
+    font-size: medium;
+    color: #fff;
+    font-family: "Dm Sans", sans-serif;
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  .grid-container #long-grid {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-size: 15px;
+    color: #fff;
+  }
+  
+  .submit-button-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .submit-button-container input {
+    width: max-content;
+    height: max-content;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    background-color: #333333;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    border-radius: 5px;
+    font-family: "Dm Sans", sans-serif;
+    transform: translateX(10px);
+  }
+  
+  .require-prompt {
+    display: flex;
+    gap: 5px;
+  }
+  
+  #text-area {
+    min-width: 100%;
+    max-width: 100%;
+    box-sizing: content-box;
+    border: none;
+    outline: none;
+    min-height: 35px;
+    padding: 4px;
+  }
+  
+  .link-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100vw;
+  
+  }
+  
+  .link-box::before {
+    content: "";
+    position: fixed;
+    top: 70vh;
+    left: 35vw;
+    width: 30vw;
+    height: 28vh;
+    background: url("../images/about/about-bg.svg") no-repeat center center;
+    background-size: 30vw 28vh;
+    z-index: -1;
+  
+  
+  }
+  
+  .link-box 
+  {
+    text-align: center;
+  }
+  
+  .link-box p 
+  {
+    font-weight: 300;
+    letter-spacing: 0.6px;
+    line-height: 24px;
+  }
+  .link-box a {
+    color: #0e95fe;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-weight: 100;
+  }
+  
+  @media (max-width: 575px) {
+    #banner-secondary-text {
+      font-size: 18px;
+    }
+  
+    #banner-primary-text {
+      font-size: 30px;
+    }
+  
+    .grid-container {
+      display: flex;
+      flex-direction: column;
+      min-height: max-content;
+      width: 90vw;
+    }
+  
+    .main-section .content {
+      width: 90vw;
+      min-width: 90vw;
+      max-width: 90vw;
+    }
+  }
