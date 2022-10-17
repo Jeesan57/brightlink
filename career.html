@@ -387,15 +387,20 @@
 
             <div id="long-grid">
                 <label for="coverLetter"> Cover Letter(Message) </label>
-                <textarea  id="text-area" name="Cover Letter" ></textarea>
+                <textarea id="text-area" name="Cover Letter"></textarea>
                 <div class="submit-button-container">
-                    All the fields are required
+                    <div class="require-prompt">
+                        <i class="icon-info-circled"></i>
+                        <p>
+                            All the fields are required
+                        </p>
+                    </div>
                     <input type="submit" value="SUBMIT">
                 </div>
-                 
+
             </div>
 
-            
+
 
         </form>
     </div>
@@ -461,8 +466,8 @@
                 <div class="newsletter">
                     <h4>Stay Informed With Our Newsletter</h4>
                     <form class="form " id="mailchimp" novalidate="true">
-                        <input required placeholder="Enter Your Email" class="newsletter-field form-control " type="email"
-                            pattern=".{5,100}" required="" name="EMAIL">
+                        <input required placeholder="Enter Your Email" class="newsletter-field form-control "
+                            type="email" pattern=".{5,100}" required="" name="EMAIL">
                         <button type="submit" class="btn btn-block btn_newsletter ">
                             SEND
                         </button>
