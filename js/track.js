@@ -8,7 +8,7 @@ function addKeyFrames() {
  
   @keyframes textAnimation {
     0%{
-      content: "CAREER";
+      content: "TRACK YOUR SHIPMENT";
     }
   
     50%{
@@ -17,14 +17,14 @@ function addKeyFrames() {
 
 
     100%{
-      content: "JOB VACANCIES";
+      content: "ONLINE TRACKING";
 
     }
   }
   
     #banner-primary-text:after {
       animation: textAnimation ${changeTime}s linear infinite alternate;
-      content: "CAREER";
+      content: "TRACK YOUR SHIPMENT";
       display: block;
       z-index: 15;
     }
