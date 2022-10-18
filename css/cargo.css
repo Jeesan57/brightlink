@@ -231,14 +231,19 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    background: radial-gradient(circle, rgba(27, 27, 27, 1) 22%, rgba(0, 0, 0, 1) 89%);
+    /* background: radial-gradient(circle, rgba(27, 27, 27, 1) 22%, rgba(0, 0, 0, 1) 89%); */
+
+    background-color: white;
+    background-image: url("../images/about/about-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    color: black;
 }
 
 .cargo-service>* {
 
     max-width: 80vw;
     font-family: 'Manrope', sans-serif;
-    font-weight: bold;
 }
 
 .cargo-title {
