@@ -240,7 +240,7 @@ body {
     height: max-content;
     display: flex;
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 .main-box iframe {
