@@ -142,27 +142,27 @@ body {
     width: 100%;
     height: 100%;
     z-index: 5;
-    background: url("../images/moving-and-storage.jpg") no-repeat center center fixed;
+    background: linear-gradient(rgb(28 24 24 / 30%), rgba(34, 34, 34, 0.3)),url("../images/moving-and-storage.jpg") no-repeat center center fixed;  
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-
-    filter: contrast(90%);
 }
 
 #banner-secondary-text {
     transform: translateY(-30px);
     font-size: 20px;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.3rem;
     z-index: 15;
 }
 
 #banner-primary-text {
-    font-size: 60px;
+    font-size: 66px;
     font-weight: 400;
-    letter-spacing: 0.2rem;
+    letter-spacing: 4px;
     z-index: 15;
+    line-height: 1.2;
+    margin-bottom: 30px;
 }
 
 .main-section {
@@ -184,14 +184,13 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-
-    background: url("../images/moving-quote.jpg") no-repeat center center fixed;
+    background: linear-gradient(rgb(28 24 24 / 30%), rgba(34, 34, 34, 0.3)), url("../images/moving-quote.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     z-index: 5;
-    filter: contrast(50%);
+    
 }
 
 .main-section .content {
@@ -315,6 +314,7 @@ body {
     border: none;
     outline: none;
     height: 30px;
+    border: 1px solid #ced4da;
 }
 
 .grid-container #text-area {
@@ -324,6 +324,7 @@ body {
     border: none;
     outline: none;
     height: 30px;
+
 }
 
 .link-box {
@@ -428,11 +429,12 @@ body {
 
 @media (max-width: 575px) {
     #banner-secondary-text {
-        font-size: 18px;
+        font-size: 14px;
+        
     }
 
     #banner-primary-text {
-        font-size: 30px;
+        font-size: 24px;
     }
 
     .grid-container {

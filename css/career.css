@@ -144,14 +144,11 @@ body {
   width: 100%;
   height: 100%;
   z-index: 5;
-  background: url("../images/moving-and-storage.jpg") no-repeat center center fixed;
+  background: linear-gradient(rgb(28 24 24 / 30%), rgba(34, 34, 34, 0.3)), url("../images/moving-and-storage.jpg") no-repeat center center fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-
-  filter: contrast(90%);
-
 }
 
 #banner-secondary-text {
@@ -187,14 +184,13 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-
-  background: url("../images/moving-quote.jpg") no-repeat center center fixed;
+  background: linear-gradient(rgb(28 24 24 / 30%), rgba(34, 34, 34, 0.3)), url("../images/moving-quote.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   z-index: 5;
-  filter: contrast(50%);
+
 }
 
 .main-section .content {
