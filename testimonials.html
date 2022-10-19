@@ -129,7 +129,7 @@
             <div class="review">
                 <p class="review-content">
                     amar nam ki?
-                     We used their service while my parents relocating abroad, and they seems to be very
+                    We used their service while my parents relocating abroad, and they seems to be very
                     professional.
                 </p>
                 <hr />
@@ -191,6 +191,75 @@
 
 
         <button class="glider-next">
+            <i id="bars" class="icon-right-open" aria-hidden="true"></i>
+        </button>
+        <!-- <div id="dots" class="glider-dots"></div> -->
+
+    </div>
+
+
+
+    <div class="glider-contain multiple company">
+        <button class="glider-prev-icon">
+            <i id="bars" class="icon-left-open" aria-hidden="true"></i>
+        </button>
+
+        <div class="glider company-glider">
+
+         <div>
+            <img src="images/logo.png">
+         </div>
+
+         <div>
+            <img src="images/logo.png">
+         </div>
+
+         <div>
+            <img src="images/logo.png">
+         </div>
+
+         <div>
+            <img src="images/logo.png">
+         </div>
+
+         <div>
+            <img src="images/logo.png">
+         </div>
+
+         <div>
+            <img src="images/logo.png">
+         </div>
+
+         <div>
+            <img src="images/logo.png">
+         </div>
+
+         <div>
+            <img src="images/logo.png">
+         </div>
+
+         <div>
+            <img src="images/logo.png">
+         </div>
+
+         <div>
+            <img src="images/logo.png">
+         </div>
+
+         <div>
+            <img src="images/logo.png">
+         </div>
+
+         <div>
+            <img src="images/logo.png">
+         </div>
+
+
+
+        </div>
+
+
+        <button class="glider-next-icon">
             <i id="bars" class="icon-right-open" aria-hidden="true"></i>
         </button>
         <!-- <div id="dots" class="glider-dots"></div> -->
@@ -371,6 +440,33 @@
             }
         ]
     });
+
+    new Glider(document.querySelector('.company-glider'), {
+        slidesToShow: 6,
+        slidesToScroll: 6,
+        draggable: true,
+        dots: '#dots',
+        arrows: {
+            prev: '.glider-prev-icon',
+            next: '.glider-next-icon'
+        },
+        responsive: [
+            {
+                breakpoint: 585,
+                settings: {
+                    slidesToShow: 6,
+                    slidesToScroll: 6,
+                    draggable: false,
+                    dots: '#dots',
+                    arrows: {
+                        prev: '.glider-prev-icon',
+                        next: '.glider-next-icon'
+                    },
+                }
+            }
+        ]
+    });
+
 
 </script>
 
