@@ -327,6 +327,7 @@ body {
   outline: none;
   min-height: 35px;
   padding: 4px;
+  border-radius: 5px;
 }
 
 .link-box {
