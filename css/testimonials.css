@@ -243,7 +243,6 @@ body {
 
 .company-glider {
     position: relative;
-    z-index: -1;
     box-sizing: border-box;
     width: 100%;
     margin: 0;
