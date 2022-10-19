@@ -275,8 +275,9 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: #ebebeb;
+    /* background-color: #ebebeb; */
     text-align: justify;
+    background-color: white;
 }
 
 .review-content {
