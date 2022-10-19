@@ -244,6 +244,7 @@ body {
   height: 35px;
   border: 1px solid #ced4da;
   color: #525252;
+  border-radius: 5px;
 }
 
 .grid-container input {
