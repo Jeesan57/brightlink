@@ -276,7 +276,6 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: #ebebeb;
-    border-bottom: 1px solid grey;
     text-align: justify;
 }
 

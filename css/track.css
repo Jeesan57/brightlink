@@ -251,6 +251,7 @@ body {
     align-items: center;
     border: 1px solid #ced4da;
     height: 35px;
+    border-radius: 5px;
 }
 
 .grid-container select {
@@ -260,6 +261,8 @@ body {
     height: 35px;
     background-color: white;
     color: #525252;
+    border-radius: 5px;
+
 }
 
 .grid-container label {
@@ -277,6 +280,7 @@ body {
     grid-column-end: 3;
     font-size: 15px;
     color: #fff;
+    border-radius: 5px;
 }
 
 .submit-button-container {
@@ -314,6 +318,8 @@ body {
     outline: none;
     height: 30px;
     border: 1px solid #ced4da;
+    border-radius: 5px;
+
 }
 
 .grid-container #text-area {
@@ -323,7 +329,7 @@ body {
     border: none;
     outline: none;
     height: 30px;
-
+    border-radius: 5px;
 }
 
 .link-box {
