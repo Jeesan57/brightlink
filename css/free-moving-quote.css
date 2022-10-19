@@ -227,24 +227,16 @@
   
   .grid-container {
     display: grid;
-    gap: 30px;
+    gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: transparent;
     font-weight: 300;
     width: 70vw;
     padding: 10px;
     z-index: 10;
+    box-sizing: border-box;
   }
   
-  .grid-container .file-container {
-    width: 100%;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    height: 35px;
-    border: 1px solid #ced4da;
-    color: #525252;
-  }
   
   .grid-container input {
     border: none;
@@ -256,14 +248,10 @@
     border: 1px solid #ced4da;
     height: 35px;
     padding-left: 5px;
+    box-sizing: border-box;
+    
   }
   
-  .grid-container input[type="file"] {
-    width: max-content;
-    height: max-content;
-    color: #525252;
-    border: none;
-  }
   
   .grid-container select {
     border: none;
@@ -272,17 +260,8 @@
     height: 35px;
     background-color: white;
     color: #525252;
-    padding-left: 5px;
-  }
   
-  .grid-container label {
-    display: flex;
-    text-align: left;
-    font-size: medium;
-    color: #fff;
-    font-family: "Dm Sans", sans-serif;
-    font-size: 1rem;
-    margin-bottom: 5px;
+    box-sizing: border-box;
   }
   
   .grid-container #long-grid {
@@ -290,6 +269,7 @@
     grid-column-end: 4;
     font-size: 15px;
     color: #fff;
+
   }
   
   .submit-button-container {
@@ -311,7 +291,6 @@
     font-size: 14px;
     border-radius: 5px;
     font-family: "Dm Sans", sans-serif;
-    transform: translateX(10px);
   }
   
   .require-prompt {
@@ -325,8 +304,10 @@
     box-sizing: content-box;
     border: none;
     outline: none;
-    min-height: 35px;
-    padding: 4px;
+    height: 35px;
+    padding: 5px;
+    box-sizing: border-box;
+    
   }
   
   .link-box {
