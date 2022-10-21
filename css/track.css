@@ -148,6 +148,68 @@ body {
     -o-background-size: cover;
 }
 
+.local-scroll
+{
+    position: absolute;
+    bottom: 30px;
+}
+
+.scroll-down-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  color: black;
+  border: none;
+  outline: none;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  font-size: 10px;
+  z-index: 30;
+  line-height: 1;
+  position: relative;
+  background-color: transparent;
+}
+.scroll-down-icon::after
+{
+    position: absolute;
+    content: "";
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    transform: translate(-20%, -25%) rotate(45deg);
+
+}
+
+
+.icon-link
+{
+    all: unset;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: dirChange 3s linear infinite;
+    z-index: 100;
+}
+
+
+@keyframes dirChange {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    90% {
+        transform: translateY(4px);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+
 #banner-secondary-text {
     transform: translateY(-30px);
     font-size: 20px;

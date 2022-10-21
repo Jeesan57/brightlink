@@ -1,9 +1,12 @@
 // makes the nav bar black(ish) if page is scrolled
 function addScrollEvent() {
     window.scrollTo(0, 0);
-    navBarColor = document.getElementById("nav-color");
-    navBarColorMobile = document.getElementById("nav-color-mobile");
+
+    
     window.addEventListener("scroll", function () {
+        navBarColor = document.getElementById("nav-color");
+        navBarColorMobile = document.getElementById("nav-color-mobile");
+        
         if (this.window.pageYOffset > 2) {
             navBarColor.style = "background-color: rgba(10, 10, 10, 0.88);";
             navBarColorMobile.style = "background-color: rgba(10, 10, 10, 0.88);";
