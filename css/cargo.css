@@ -95,6 +95,19 @@
     font-family: "Quicksand", sans-serif;
 }
 
+.content-mobile
+{
+    padding-top: 30px;
+    width: 45vw;
+    max-width: 50vw;
+    min-height: max-content;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: "Quicksand", sans-serif;
+}
+
 .explore-button {
     all: unset;
     width: max-content;
@@ -219,6 +232,7 @@
     }
 }
 
+
 .animate-text {
     animation: textAnimation 1s ease 1;
 }
@@ -270,6 +284,11 @@
     font-size: 14px;
     line-height: 150%;
     margin-bottom: 30px;
+    text-align: justify;
+}
+
+.less, .more
+{
     text-align: justify;
 }
 .cargo-button {
@@ -424,6 +443,18 @@
         width: 90vw;
         max-width: 90vw;
 
+    }
+    .content-mobile
+    {
+        padding-top: 30px;
+        padding: 15px;
+        justify-content: start;
+        align-items: flex-start;
+        height: max-content;
+        min-height: max-content;
+
+        width: 90vw;
+        max-width: 90vw;
     }
 
     #mobile-description {
