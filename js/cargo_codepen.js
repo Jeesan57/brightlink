@@ -428,91 +428,128 @@ function changeWithLeftRightButtonMobile(direction) {
 
 function setContainerSize(isExpanded, container, pageNumber) {
     let height = 500;
-    if (window.matchMedia('(min-width: 1000px)')) {
+    if (window.matchMedia('(max-width: 500px)').matches) {
+        console.log("500");
         if (isExpanded) {
-            if(pageNumber === 2){
+            if (pageNumber === 2) {
 
-                height = 950;
+                height = 3000;
             }
-            else{
-                height = 650;
+            else if(pageNumber === 6 || pageNumber === 7)
+            {
+                height = 1100;
             }
-        }
-        else {
-            height = 500;
-        }
-    }
-    else if (window.matchMedia('(min-width: 900px)')) {
-        if (isExpanded) {
-            if(pageNumber === 2){
-
-                height = 950;
-            }
-            else{
-                height = 910;
+            else {
+                height = 1500;
             }
         }
         else {
             height = 800;
         }
     }
-
-    else if (window.matchMedia('(min-width: 800px)')) {
+    else if (window.matchMedia('(max-width: 600px)').matches) {
+        console.log("600");
         if (isExpanded) {
-            if(pageNumber === 2){
+            if (pageNumber === 2) {
 
-                height = 950;
+                height = 2200;
             }
-            else{
-                height = 650;
+            else if(pageNumber === 6 || pageNumber === 7)
+            {
+                height = 900;
+            }
+            else {
+                height = 1500;
             }
         }
         else {
-            height = 500;
+            height = 700;
         }
     }
 
-    else if (window.matchMedia('(min-width: 700px)')) {
-        if (isExpanded) {
-            if(pageNumber === 2){
+    else if (window.matchMedia('(max-width: 700px)').matches) {
+        console.log("700");
 
-                height = 950;
+        if (isExpanded) {
+            if (pageNumber === 2) {
+
+                height = 1900;
             }
-            else{
-                height = 650;
+            else if(pageNumber === 6 || pageNumber === 7)
+            {
+                height = 700;
+            }
+            else {
+                height = 1200;
             }
         }
         else {
-            height = 500;
+            height = 600;
         }
     }
 
-    else if (window.matchMedia('(min-width: 500px)')) {
+    else if (window.matchMedia('(max-width: 800px)').matches) {
         if (isExpanded) {
-            if(pageNumber === 2){
+            if (pageNumber === 2) {
 
-                height = 950;
+                height = 1600;
             }
-            else{
-                height = 650;
+            else if(pageNumber === 6 || pageNumber === 7)
+            {
+                height = 700;
+            }
+            else {
+                height = 900;
             }
         }
         else {
-            height = 500;
+            height = 550;
+        }
+    }
+
+    else if (window.matchMedia('(max-width: 900px)').matches) {
+        if (isExpanded) {
+            if (pageNumber === 2) {
+
+                height = 1500;
+            }
+            else if(pageNumber === 6 || pageNumber === 7)
+            {
+                height = 600;
+            }
+            else {
+                height = 900;
+            }
+        }
+        else {
+            height = 550;
         }
     }
     else {
+        console.log('greater than 900');
         if (isExpanded) {
-            if(pageNumber === 2){
+            if (pageNumber === 2) {
 
-                height = 950;
+                height = 1000;
             }
-            else{
-                height = 650;
+            else if(pageNumber === 6 || pageNumber === 7)
+            {
+                height = 450;
+            }
+            else {
+                height = 600;
             }
         }
         else {
-            height = 500;
+            if(pageNumber === 6 || pageNumber === 7)
+            {
+
+                height = 400;
+            }
+            else 
+            {
+                height = 450;
+            }
         }
     }
     container.style.height = `${height}px`;
@@ -566,6 +603,9 @@ function getLessText(textSectionDescription) {
 
 
 function start() {
+    let container = document.getElementsByClassName("list")[0];
+
+
     // find current anchor link (if any)
     let link = location.href;
     let splitted = link.split("#")[1];
@@ -574,6 +614,7 @@ function start() {
         // window.scrollTo(0, 0);
         setPage(1);
         setPageMobile(1);
+        setContainerSize(false, container, 1);
     }
     else {
         let anchor = splitted.split("/")[0];
@@ -587,6 +628,7 @@ function start() {
         }
         setPage(page);
         setPageMobile(page);
+        setContainerSize(false, container, pageNumber);
     }
 
 }
