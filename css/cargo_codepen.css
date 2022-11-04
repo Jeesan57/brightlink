@@ -56,6 +56,7 @@ body {
 }
 
 #scene #left-zone .list .item {
+  background-color: green;
   /* border-right: 2px solid black; */
 
 }
@@ -71,6 +72,7 @@ body {
   height: 50px;
   text-align: center;
   line-height: 50px;
+  background-color: #d64541;
 }
 
 
@@ -177,53 +179,3 @@ input[type="radio"]:checked + label{
     height: 1550px;
   }
 }
-
-
-/* @media (max-width: 760px) {
-  #scene #left-zone {
-    width: max-content;
-    padding: 10px;
-    flex-direction: column;
-  }
-
-  .quick-content {
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-
-  #scene #left-zone .list li.item input[type="radio"]~.content {
-    position: absolute;
-    top: -600px;
-    left: 25vw;
-    height: 600px;
-    animation-duration: 0.75s;
-    animation-name: slideout;
-    animation-timing-function: ease-out;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  #scene #left-zone .list li.item input[type="radio"]~label.label_cargo:before {
-    display: none;
-  }
-
-  #scene #left-zone .list li.item input[type="radio"]~.content {
-    width: 60vw;
-    position: absolute;
-  }
-
-  #scene #left-zone .list li.item input[type="radio"]~.content p {
-    position: relative;
-    max-width: 70%;
-    text-align: center;
-    color: black;
-  }
-} */
