@@ -34,6 +34,7 @@ body {
   height: max-content;
   position: relative;
   background-color: #fff;
+  overflow: hidden;
 }
 
 #scene #left-zone {
@@ -51,7 +52,7 @@ body {
   list-style: none;
   flex-direction: column;
   width: 30vw;
-  min-height: 600px;
+  min-height: 700px;
 }
 
 #scene #left-zone .list .item {
@@ -106,9 +107,9 @@ body {
 
 
 #scene #left-zone .list li.item input[type="radio"]~.content p {
-  max-width: 80%;
-  text-align: center;
+  max-width: 95%;
   color: black;
+  text-align: justify;
 }
 
 #scene #left-zone .list li.item input[type="radio"]:checked~label {
@@ -135,11 +136,48 @@ body {
 
 #scene #middle-border {
   background-color: black;
-  height: 75%;
-  flex-grow: 1;
+  width: 2px;
+  height: 100%;
   max-width: 2px;
   z-index: 100;
 }
+
+@media (max-width: 1000px) {
+  #scene #left-zone .list{
+    height: 800px;
+  }
+}
+
+@media (max-width: 900px) {
+  #scene #left-zone .list{
+    height: 850px;
+  }
+}
+
+@media (max-width: 800px) {
+  #scene #left-zone .list{
+    height: 950px;
+  }
+}
+
+@media (max-width: 700px) {
+  #scene #left-zone .list{
+    height: 1050px;
+  }
+}
+
+@media (max-width: 600px) {
+  #scene #left-zone .list{
+    height: 1250px;
+  }
+}
+
+@media (max-width: 500px) {
+  #scene #left-zone .list{
+    height: 1550px;
+  }
+}
+
 
 /* @media (max-width: 760px) {
   #scene #left-zone {
