@@ -56,7 +56,7 @@ body {
 }
 
 #scene #left-zone .list .item {
-  background-color: green;
+  
   /* border-right: 2px solid black; */
 
 }
@@ -72,7 +72,7 @@ body {
   height: 50px;
   text-align: center;
   line-height: 50px;
-  background-color: #d64541;
+  
 }
 
 
