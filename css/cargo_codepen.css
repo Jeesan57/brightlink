@@ -56,7 +56,7 @@ body {
 }
 
 #scene #left-zone .list .item {
-  border-right: 2px solid black;
+  /* border-right: 2px solid black; */
 
 }
 
@@ -116,10 +116,10 @@ body {
   animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
-/* input:checked + label {
-  color: red;
-} */
-
+input[type="radio"]:checked + label{
+  color: #ff0000;
+  border-right: 3px solid #d64541;
+} 
 
 
 
