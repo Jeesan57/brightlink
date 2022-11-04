@@ -534,22 +534,14 @@ function setContainerSize(isExpanded, container, pageNumber) {
             }
             else if(pageNumber === 6 || pageNumber === 7)
             {
-                height = 450;
+                height = 550;
             }
             else {
                 height = 700;
             }
         }
         else {
-            if(pageNumber === 6 || pageNumber === 7)
-            {
-
-                height = 400;
-            }
-            else 
-            {
                 height = 450;
-            }
         }
     }
     container.style.height = `${height}px`;
