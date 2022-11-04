@@ -537,7 +537,7 @@ function setContainerSize(isExpanded, container, pageNumber) {
                 height = 450;
             }
             else {
-                height = 600;
+                height = 700;
             }
         }
         else {
