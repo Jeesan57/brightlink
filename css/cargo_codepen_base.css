@@ -303,6 +303,8 @@
     color: black;
     transition: background-color, color .5s;
     margin-bottom: 15vh;
+    background-color: #ebebeb;
+    color: black;
 }
 
 .cargo-button:hover {
