@@ -426,46 +426,76 @@ function changeWithLeftRightButtonMobile(direction) {
     }
 }
 
-function setContainerSize(isExpanded, container) {
+function setContainerSize(isExpanded, container, pageNumber) {
     let height = 500;
-    if (window.matchMedia('(max-width: 1000px)')) {
+    if (window.matchMedia('(min-width: 1000px)')) {
         if (isExpanded) {
-            height = 1000;
+            if(pageNumber === 2){
+
+                height = 950;
+            }
+            else{
+                height = 650;
+            }
         }
         else {
             height = 500;
         }
     }
-    else if (window.matchMedia('(max-width: 900px)')) {
+    else if (window.matchMedia('(min-width: 900px)')) {
         if (isExpanded) {
-            height = 1000;
+            if(pageNumber === 2){
+
+                height = 950;
+            }
+            else{
+                height = 910;
+            }
+        }
+        else {
+            height = 800;
+        }
+    }
+
+    else if (window.matchMedia('(min-width: 800px)')) {
+        if (isExpanded) {
+            if(pageNumber === 2){
+
+                height = 950;
+            }
+            else{
+                height = 650;
+            }
         }
         else {
             height = 500;
         }
     }
 
-    else if (window.matchMedia('(max-width: 800px)')) {
+    else if (window.matchMedia('(min-width: 700px)')) {
         if (isExpanded) {
-            height = 1000;
+            if(pageNumber === 2){
+
+                height = 950;
+            }
+            else{
+                height = 650;
+            }
         }
         else {
             height = 500;
         }
     }
 
-    else if (window.matchMedia('(max-width: 700px)')) {
+    else if (window.matchMedia('(min-width: 500px)')) {
         if (isExpanded) {
-            height = 1000;
-        }
-        else {
-            height = 500;
-        }
-    }
+            if(pageNumber === 2){
 
-    else if (window.matchMedia('(max-width: 500px)')) {
-        if (isExpanded) {
-            height = 1000;
+                height = 950;
+            }
+            else{
+                height = 650;
+            }
         }
         else {
             height = 500;
@@ -473,7 +503,13 @@ function setContainerSize(isExpanded, container) {
     }
     else {
         if (isExpanded) {
-            height = 1000;
+            if(pageNumber === 2){
+
+                height = 950;
+            }
+            else{
+                height = 650;
+            }
         }
         else {
             height = 500;
@@ -492,13 +528,13 @@ function readMoreOrLess(pageNumber) {
     if (more.style.display === "none") {
         more.style.display = "inline";
         button.textContent = "Read Less";
-        setContainerSize(true, container);
+        setContainerSize(true, container, pageNumber);
 
     }
     else {
         more.style.display = "none";
         button.textContent = "Explore Services";
-        setContainerSize(false, container);
+        setContainerSize(false, container, pageNumber);
     }
 }
 
