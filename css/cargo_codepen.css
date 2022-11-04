@@ -55,6 +55,8 @@ body {
 }
 
 #scene #left-zone .list .item {
+  border-right: 2px solid black;
+
 }
 
 
