@@ -52,7 +52,6 @@ body {
   list-style: none;
   flex-direction: column;
   width: 30vw;
-  min-height: 700px;
 }
 
 #scene #left-zone .list .item {
@@ -144,38 +143,44 @@ input[type="radio"]:checked + label{
   z-index: 100;
 }
 
+
+#scene #left-zone .list{
+  height: 800px;
+}
+
+
 @media (max-width: 1000px) {
   #scene #left-zone .list{
-    height: 800px;
+    height: 900px;
   }
 }
 
 @media (max-width: 900px) {
   #scene #left-zone .list{
-    height: 850px;
+    height: 950px;
   }
 }
 
 @media (max-width: 800px) {
   #scene #left-zone .list{
-    height: 950px;
+    height: 1050px;
   }
 }
 
 @media (max-width: 700px) {
   #scene #left-zone .list{
-    height: 1050px;
+    height: 1150px;
   }
 }
 
 @media (max-width: 600px) {
   #scene #left-zone .list{
-    height: 1250px;
+    height: 1350px;
   }
 }
 
 @media (max-width: 500px) {
   #scene #left-zone .list{
-    height: 1550px;
+    height: 1650px;
   }
 }
