@@ -433,18 +433,18 @@ function setContainerSize(isExpanded, container, pageNumber) {
         if (isExpanded) {
             if (pageNumber === 2) {
 
-                height = 3000;
+                height = 3100;
             }
             else if(pageNumber === 6 || pageNumber === 7)
             {
-                height = 1100;
+                height = 1200;
             }
             else {
-                height = 1500;
+                height = 1600;
             }
         }
         else {
-            height = 800;
+            height = 900;
         }
     }
     else if (window.matchMedia('(max-width: 600px)').matches) {
@@ -452,18 +452,18 @@ function setContainerSize(isExpanded, container, pageNumber) {
         if (isExpanded) {
             if (pageNumber === 2) {
 
-                height = 2200;
+                height = 2300;
             }
             else if(pageNumber === 6 || pageNumber === 7)
             {
-                height = 900;
+                height = 1000;
             }
             else {
-                height = 1500;
+                height = 1600;
             }
         }
         else {
-            height = 700;
+            height = 800;
         }
     }
 
@@ -473,22 +473,41 @@ function setContainerSize(isExpanded, container, pageNumber) {
         if (isExpanded) {
             if (pageNumber === 2) {
 
-                height = 1900;
+                height = 2000;
             }
             else if(pageNumber === 6 || pageNumber === 7)
             {
-                height = 700;
+                height = 800;
             }
             else {
-                height = 1200;
+                height = 1300;
             }
         }
         else {
-            height = 600;
+            height = 700;
         }
     }
 
     else if (window.matchMedia('(max-width: 800px)').matches) {
+        if (isExpanded) {
+            if (pageNumber === 2) {
+
+                height = 1700;
+            }
+            else if(pageNumber === 6 || pageNumber === 7)
+            {
+                height = 800;
+            }
+            else {
+                height = 1000;
+            }
+        }
+        else {
+            height = 650;
+        }
+    }
+
+    else if (window.matchMedia('(max-width: 900px)').matches) {
         if (isExpanded) {
             if (pageNumber === 2) {
 
@@ -499,30 +518,11 @@ function setContainerSize(isExpanded, container, pageNumber) {
                 height = 700;
             }
             else {
-                height = 900;
+                height = 1000;
             }
         }
         else {
-            height = 550;
-        }
-    }
-
-    else if (window.matchMedia('(max-width: 900px)').matches) {
-        if (isExpanded) {
-            if (pageNumber === 2) {
-
-                height = 1500;
-            }
-            else if(pageNumber === 6 || pageNumber === 7)
-            {
-                height = 600;
-            }
-            else {
-                height = 900;
-            }
-        }
-        else {
-            height = 550;
+            height = 650;
         }
     }
     else {
@@ -530,7 +530,7 @@ function setContainerSize(isExpanded, container, pageNumber) {
         if (isExpanded) {
             if (pageNumber === 2) {
 
-                height = 1000;
+                height = 1100;
             }
             else if(pageNumber === 6 || pageNumber === 7)
             {
