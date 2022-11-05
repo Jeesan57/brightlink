@@ -240,11 +240,11 @@ function setPage(pageNumber) {
   }
   backgroundImage.src = currentInformation.src; // change src
   let mainTitle = document.getElementsByClassName(`title-${pageNumber}`)[0]; // get
-  // textAnimation(mainTitle, 1);
+  textAnimation(mainTitle, 1);
 
 
   let descriptionElement = document.getElementsByClassName(`description-${pageNumber}`)[0]; // get
-  // textAnimation(descriptionElement, 1);
+  textAnimation(descriptionElement, 1);
 
   slidingAnimation(getCurrentPage(), pageNumber, 2);
   for (let i = 1; i <= numberOfPages; i++) {
