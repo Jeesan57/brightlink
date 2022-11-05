@@ -506,12 +506,12 @@
     }
 
     .line-button {
-        transform: scale(0.5) translateX(-50px) translateY(-25px);
+        transform: scale(0.5) translateX(-20px) translateY(-25px);
     }
 
     .active {
         aspect-ratio: 1;
-        transform: scale(1) translateX(-30px) translateY(-15px);
+        transform: scale(1) translateX(-10px) translateY(-15px);
     }
 
     .fixed-socials {
