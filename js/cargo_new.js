@@ -157,6 +157,8 @@ function slidingAnimation(current, target, time) {
     // current + i - 1 => gives the correct information for the element
     image.src =
       informationArray[(current + i - 1) % numberOfPages].thumbnailSrc;
+
+    image.setAttribute("alt", `alt image ${i}`);
     image.onclick = function () {
       // image click function
       setPage(((current + i - 1) % numberOfPages) + 1);
