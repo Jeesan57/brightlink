@@ -32,9 +32,22 @@
   height: max-content;
 }
 
+.footer-column h4 
+{
+  margin-bottom: 5px;
+  margin-top: 5px;
+
+}
+
 .footer-column ul {
   list-style: none;
 }
+
+.footer-column ul li {
+  margin-top: 4px;
+
+}
+
 
 .footer-column ul li a {
   all: unset;

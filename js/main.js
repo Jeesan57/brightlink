@@ -113,7 +113,7 @@ function addKeyFrames() {
   #primary2 {
     animation: textup ${changeTime}s linear infinite;
   }
-  #secondary-link {
+  .secondary-link {
     animation: textup ${changeTime}s linear infinite;
   }
   #secondary-description {
@@ -126,38 +126,46 @@ function addKeyFrames() {
 
 
 
+function showLink(pageNumber) {
+  let links = document.getElementsByClassName('secondary-link');
+  console.log(links);
+  for (let i = 0; i < links.length; i++) {
+    console.log(links[i]);
+    links[i].style.display = "none";
+  }
+
+  let link = document.getElementsByClassName(`link-${pageNumber+1}`)[0];
+  link.style.display = "block";
+
+}
+
 
 // sets the page
 function setPage(pageNumber) {
   currentPage = pageNumber;
+  showLink(pageNumber);
   let information = informationArray[pageNumber];
   sliderImage.src = information.image;
   primary1.textContent = information.primary1;
   primary2.textContent = information.primary2;
-  secondaryLink.textContent = information.secondaryLink;
-  secondaryLink.onclick = function () {
-    window.location = information.secondaryLinkHref;
-  }
   description.textContent = information.description;
 }
 
 // goes to prev page
-function goToPrevPage()
-{
+function goToPrevPage() {
   let totalPages = informationArray.length;
   let target = 0;
-  if(currentPage === 0) target = totalPages - 1;
+  if (currentPage === 0) target = totalPages - 1;
   else target = currentPage - 1;
   setPage(target);
   setSliders(target);
 }
 
 // goes to next page
-function goToNextPage()
-{
+function goToNextPage() {
   let totalPages = informationArray.length;
   let target = 0;
-  if(currentPage >= totalPages - 1) target = 0;
+  if (currentPage >= totalPages - 1) target = 0;
   else target = currentPage + 1;
   setPage(target);
   setSliders(target);
@@ -221,16 +229,11 @@ function main() {
   slider = document.getElementById("slider");
   primary1 = document.getElementById('primary1');
   primary2 = document.getElementById('primary2');
-  secondaryLink = document.getElementById('secondary-link');
   description = document.getElementById('secondary-description');
   // takes 0 to 3
   let information = informationArray[0];
   primary1.textContent = information.primary1;
   primary2.textContent = information.primary2;
-  secondaryLink.textContent = information.secondaryLink;
-  secondaryLink.onclick = function () {
-    window.location = information.secondaryLinkHref;
-  }
   description.textContent = information.description;
   sliderImage = document.getElementById("slider-image");
   slider0 = document.getElementById("slider0");

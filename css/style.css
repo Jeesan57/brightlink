@@ -163,10 +163,12 @@ body {
   display: flex;
 }
 .secondary-link-container {
+  display: flex;
   width: max-content;
   margin-top: 40px;
+  flex-direction: column;
 }
-#secondary-link {
+.secondary-link {
   color: white;
   padding-right: 10vw;
   text-decoration: none;
