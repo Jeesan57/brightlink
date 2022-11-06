@@ -6,8 +6,7 @@ const informationArray = [
     primary2: "BRIGHTLINK CARGO",
     secondaryLink: "About Us >",
     secondaryLinkHref: "#about",
-    description:
-      "BrightLink Cargo and Movers is a UAE based shipping company specializes in cargo, moving and storage services. With strong presence in UAE, We have grown into one of the most promising logistics service providers in the region and the world at large.",
+    description: "BrightLink Cargo and Movers is a UAE based shipping company specializes in cargo, moving and storage services. With strong presence in UAE, We have grown into one of the most promising logistics service providers in the region and the world at large.",
   },
   {
     image: "./images/cargo/door-to-door-cargo.jpg",
@@ -15,8 +14,7 @@ const informationArray = [
     primary2: "Services",
     secondaryLink: "Cargo Services >",
     secondaryLinkHref: "cargo-service",
-    description:
-      "BrightLink Cargo with its specialized transport vehicles, advanced tracking system and global coverage allows us to offer a whole range of Freight Forwarding and Cargo solutions.",
+    description: "BrightLink Cargo with its specialized transport vehicles, advanced tracking system and global coverage allows us to offer a whole range of Freight Forwarding and Cargo solutions.",
   },
   {
     image: "./images/movers/movers-and-packers.jpg",
@@ -24,8 +22,7 @@ const informationArray = [
     primary2: "Relocation",
     secondaryLink: "Moving Services >",
     secondaryLinkHref: "movers-and-packers",
-    description:
-      "Want a stress-free Domestic Relocation Services or looking for Commercial Moving service?. BrightLink Movers and Packers to assist you with the all your local moving requirements.",
+    description: "Want a stress-free Domestic Relocation Services or looking for Commercial Moving service?. BrightLink Movers and Packers to assist you with the all your local moving requirements.",
   },
   {
     image: "./images/movers/international-movers.jpg",
@@ -33,8 +30,7 @@ const informationArray = [
     primary2: "Moving",
     secondaryLink: "International Movers >",
     secondaryLinkHref: "movers-and-packers#international",
-    description:
-      "BrightLink International Movers is one of the Best Moving Company in UAE offers professional International Relocations and Household Goods Shipping Services.",
+    description: "BrightLink International Movers is one of the Best Moving Company in UAE offers professional International Relocations and Household Goods Shipping Services.",
   },
   {
     image: "./images/storage/storage-service.jpg",
@@ -42,10 +38,11 @@ const informationArray = [
     primary2: "Services",
     secondaryLink: "Storage Services >",
     secondaryLinkHref: "storage-service",
-    description:
-      "BrightLink Storage Solutions are amongst one of the best that exists in the industry. We offer long-term, short-term and Self-Storage Services.",
+    description: "BrightLink Storage Solutions are amongst one of the best that exists in the industry. We offer long-term, short-term and Self-Storage Services.",
   },
 ];
+
+
 
 let changeTime = 11; // animation cycle
 let currentPage = 0;
@@ -66,6 +63,7 @@ let slider4 = null;
 let navBarColor = null;
 let navBarColorMobile = null;
 let currentPageElement = null;
+
 
 // key frame for background and text animation
 function addKeyFrames() {
@@ -126,6 +124,9 @@ function addKeyFrames() {
   document.head.appendChild(keyFrames);
 }
 
+
+
+
 // sets the page
 function setPage(pageNumber) {
   currentPage = pageNumber;
@@ -136,25 +137,27 @@ function setPage(pageNumber) {
   secondaryLink.textContent = information.secondaryLink;
   secondaryLink.onclick = function () {
     window.location = information.secondaryLinkHref;
-  };
+  }
   description.textContent = information.description;
 }
 
 // goes to prev page
-function goToPrevPage() {
+function goToPrevPage()
+{
   let totalPages = informationArray.length;
   let target = 0;
-  if (currentPage === 0) target = totalPages - 1;
+  if(currentPage === 0) target = totalPages - 1;
   else target = currentPage - 1;
   setPage(target);
   setSliders(target);
 }
 
 // goes to next page
-function goToNextPage() {
+function goToNextPage()
+{
   let totalPages = informationArray.length;
   let target = 0;
-  if (currentPage >= totalPages - 1) target = 0;
+  if(currentPage >= totalPages - 1) target = 0;
   else target = currentPage + 1;
   setPage(target);
   setSliders(target);
@@ -216,10 +219,10 @@ function startInterval() {
 // intializing
 function main() {
   slider = document.getElementById("slider");
-  primary1 = document.getElementById("primary1");
-  primary2 = document.getElementById("primary2");
-  secondaryLink = document.getElementById("secondary-link");
-  description = document.getElementById("secondary-description");
+  primary1 = document.getElementById('primary1');
+  primary2 = document.getElementById('primary2');
+  secondaryLink = document.getElementById('secondary-link');
+  description = document.getElementById('secondary-description');
   // takes 0 to 3
   let information = informationArray[0];
   primary1.textContent = information.primary1;
@@ -227,7 +230,7 @@ function main() {
   secondaryLink.textContent = information.secondaryLink;
   secondaryLink.onclick = function () {
     window.location = information.secondaryLinkHref;
-  };
+  }
   description.textContent = information.description;
   sliderImage = document.getElementById("slider-image");
   slider0 = document.getElementById("slider0");
@@ -261,22 +264,4 @@ function readMoreOrLess() {
   }
 }
 
-
-function start() {
-  let link = location.href;
-  let splitted = link.split("#")[1];
-  if (!splitted) {
-    main();
-  } 
-  else {
-    main();
-    let anchor = splitted.split("/")[0];
-    if(anchor === 'about')
-    {
-      let element = document.getElementById('about');
-      element.scrollIntoView();
-    }
-  }
-}
-start();
-
+main();
