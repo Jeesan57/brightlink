@@ -24,8 +24,9 @@ function addKeyFrames() {
   
     #banner-primary-text:after {
       animation: textAnimation ${changeTime}s linear infinite alternate;
-      content: "A";
+      content: "CAREER";
       display: block;
+      z-index: 15;
     }
     
   `;

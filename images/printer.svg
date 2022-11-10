@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
+  <g id="printer" transform="translate(-219 -213)">
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="36" cy="36" r="36" transform="translate(219 213)" fill="#91dc5a"/>
+    <g id="printing" transform="translate(233 210.935)">
+      <g id="Group_2" data-name="Group 2" transform="translate(14.119 50.738)">
+        <g id="Group_1" data-name="Group 1">
+          <path id="Path_3" data-name="Path 3" d="M179.1,399.834H166.438a1.461,1.461,0,1,0,0,2.921H179.1a1.461,1.461,0,0,0,0-2.921Z" transform="translate(-164.977 -399.834)" fill="#fff"/>
+        </g>
+      </g>
+      <g id="Group_4" data-name="Group 4" transform="translate(14.119 46.132)">
+        <g id="Group_3" data-name="Group 3">
+          <path id="Path_4" data-name="Path 4" d="M179.1,346.006H166.438a1.461,1.461,0,0,0,0,2.921H179.1a1.461,1.461,0,0,0,0-2.921Z" transform="translate(-164.977 -346.006)" fill="#fff"/>
+        </g>
+      </g>
+      <g id="Group_6" data-name="Group 6" transform="translate(0 18.065)">
+        <g id="Group_5" data-name="Group 5">
+          <path id="Path_5" data-name="Path 5" d="M40.411,27.979H35.764V19.526A1.461,1.461,0,0,0,34.3,18.065H9.516a1.461,1.461,0,0,0-1.461,1.461v8.454H3.408A3.412,3.412,0,0,0,0,31.388v14.7a3.412,3.412,0,0,0,3.408,3.408H8.056v7.841a1.461,1.461,0,0,0,1.461,1.461H34.3a1.461,1.461,0,0,0,1.461-1.461V49.491h4.648a3.412,3.412,0,0,0,3.408-3.408v-14.7A3.412,3.412,0,0,0,40.411,27.979ZM10.977,20.986H32.842v6.993H10.977ZM32.842,55.871H10.977V43.921H32.842C32.842,44.283,32.842,55.6,32.842,55.871ZM34.3,36.556H30.585a1.461,1.461,0,0,1,0-2.921H34.3a1.461,1.461,0,1,1,0,2.921Z" transform="translate(0 -18.065)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

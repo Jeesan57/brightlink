@@ -3,51 +3,47 @@ let informationArray = [
     {
         title: "Cargo Services",
         secondaryCaption: "Shipping Services",
-        description: "Looking for best and affordable international Cargo Company in UAE?. BrightLink Cargo with its specialized transport vehicles, online and offline tracking system, and nationwide and international coverage allows us to offer a whole range of professional cargo transportation solutions.",
-        exploreLink: 'cargo-service',
+        description: 
+        "Looking for best and affordable Cargo Company in UAE?. BrightLink Cargo with its specialized vehicles, online and offline tracking system, and worldwide coverage allows us to offer a whole range of professional cargo solutions.",
+        exploreLink: '/cargo-service',
         src: "./images/cargo/cargo-service.jpg",
         thumbnailSrc: "./images/cargo/cargo-service.jpg",
-        
     },
     {
-        title: "Domestic Relocation",
-        secondaryCaption: "Local Moving",
-        description: "Planning to move your house or office and looking for best professional and affordable Local Moving or Commercial Moving Company in UAE? then you are at right place. The Moving or Relocation processes whether for local or domestic environments have always been stressful and arduous for many companies, individuals and families.",
-        exploreLink: 'movers-and-packers',
+        title: "Moving Services",
+        secondaryCaption: "Relocation Services",
+        description: 
+        "Planning to Move your and looking for a professional and affordable Moving Company in UAE? then you are at right place. The Relocation processes whether for local or international environments have always been stressful and arduous for many, and we are here to make it stress-free.",
+        exploreLink: '/movers-and-packers',
         src: "./images/movers/movers-and-packers.jpg",
         thumbnailSrc: "./images/movers/movers-and-packers.jpg",
     },
     {
-        title: "International Movers",
-        secondaryCaption: "International Moving",
-        description: "BrightLink International Movers is a professional International Moving Company in UAE, and with years of experience we have performed numerous International Relocation from UAE to almost every part of the world.",
-        exploreLink: 'movers-and-packers#international',
-        src: "./images/movers/international-movers.jpg",
-        thumbnailSrc: "./images/movers/international-movers.jpg",
-    },
-    {
-        title: "Self Storage",
-        secondaryCaption: "Storage Services",
-        description: "BrightLink Storage is one of the best Storage and Warehousing services provider in UAE. We provide Long-term and Short-term Storage services for Household Furniture, and Commercial Goods.",
-        exploreLink: 'storage-service',
+        title: "Storage Services",
+        secondaryCaption: "Warehousing Services",
+        description: 
+        "Looking for best and affordable international Cargo Company in UAE?. BrightLink Cargo with its specialized transport vehicles, online and offline tracking system, and nationwide and international coverage allows us to offer a whole range of professional cargo transportation solutions.",
+        exploreLink: '/storage-service',
         src: "./images/storage/storage-service.jpg",
         thumbnailSrc: "./images/storage/storage-service.jpg",
     },
     {
-        title: "Packing Services",
-        secondaryCaption: "Packaging Services",
-        description: "BrightLink Movers and Packers as the name suggests we pack, deliver, store and transport any goods on a daily basis. Over the years we have packed thousands of goods and owing to that we have solutions for all possible problems that one can encounter during packing.",
-        exploreLink: 'packing-service',
-        src: "./images/packing/packing-service.jpg",
-        thumbnailSrc: "./images/packing/packing-service.jpg",
-    },
-    {
         title: "Furniture Installation",
         secondaryCaption: "Furniture Assembly",
-        description: "BrightLink Furniture Installation is undoubtedly the most reliable name for Furniture Installation service in UAE. We credit this achievement to our skilled professionals who have mastered the skills necessary to install and assemble couple of furniture within a few hours and also can undertake large quantity Furniture Assembly with given time.",
-        exploreLink: 'furniture-installation',
+        description: 
+        "BrightLink Furniture Installation is undoubtedly the most reliable name for Furniture Installation service in UAE. We credit this achievement to our skilled professionals who have mastered the skills necessary to install and assemble couple of furniture within a few hours and also can undertake large quantity Furniture Assembly with given time.",
+        exploreLink: '/furniture-installation',
         src: "./images/installation/furniture-installation.jpg",
         thumbnailSrc: "./images/installation/furniture-installation.jpg",
+    },
+    {
+        title: "Packing Services",
+        secondaryCaption: "Packing Materials",
+        description: 
+        "Looking for best and affordable international Cargo Company in UAE?. BrightLink Cargo with its specialized transport vehicles, online and offline tracking system, and nationwide and international coverage allows us to offer a whole range of professional cargo transportation solutions.",
+        exploreLink: '/packing-service',
+        src: "./images/packing/packing-service.jpg",
+        thumbnailSrc: "./images/packing/packing-service.jpg",
     },
 ];
 
