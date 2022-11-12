@@ -489,6 +489,89 @@
                 class="fixed-image" src="images/whatsapp.svg" height="50" width="50" alt="Whatsapp" title="WhatsApp"> </a>
     </div>
 
+    
+
+    <div class="main-section" id="moving-quote">
+        <div class="content">
+            <h3 class="main-content-title">MOVING QUOTES</h3>
+            <p class="main-content-text">Looking for International <storage>Moving Quotes</storage>? or <strong><em>Moving and Storage Quote</em></strong> online? BrightLink Cargo and Movers offers free quotes for all your Domestic Moving, <a href="movers-and-packers"><b>International Relocation</b></a>, Cargo Service, Moving and Storage requirements. Please use the advantage of our <b>Free Online Moving Quote</b> service to get the best quality service for the most competitive and affordable rate, whether it is Local Moving, International Moving, Commercial Relocation or Office Moving, just fill the below form and send us your inquiry and we will respond back to your request swiftly. We provide our service in entire world and extend our service to every part of the world. Get your moving quote now!</p>
+        </div>
+        <form class="grid-container" id="enquiryContact" action="enquirymail.php" method="post" onsubmit="return Validate()" name="vform">
+            <div id="username_div">
+                <input  type="text" id="Name" name="username" placeholder="NAME" >
+                <div id="name_error"></div>
+            </div>
+            <div id="number_div">
+                <input  type="number" id="number" name="number" placeholder="NUMBER" >
+                <div id="number_error"></div>
+            </div>
+            <div id="email_div">
+                <input  type="email" id="email" name="email" placeholder="E-MAIL" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" >
+                <div id="email_error"></div>
+            </div>
+
+            <div id="originAddr_div">
+                <input  type="text" id="originAddr"  name="originAddr" placeholder="ORIGIN ADDRESS">
+                <div id="originAddr_error"></div>
+            </div>
+            <div id="destinationAddr_div">
+                <input  type="text" id="destinationAddr"   name="destinationAddr" placeholder="DESTINATION ADDRESS">
+                <div id="destinationAddr_error"></div>
+            </div>
+            <div id="date_div">
+                <input  type="date" id="date" name="date" placeholder="SELECT ADDRESS" >
+                <div id="date_error"></div>
+            </div>
+            <div id="weight_div">
+                <input  type="text" id="weight"   name="weight" placeholder="WEIGHT/VOLUME/SIZE (Approx.)">
+                <div id="weight_error"></div>
+            </div>
+
+            <div id="commodity_div">
+                <select  name="commodity" id="commodity" >
+                    <option value="" disabled selected> SELECT COMMODITY</option>
+                    <option value="personal effects">PERSONAL EFFECTS</option>
+                    <option value="household goods">HOUSEHOLD GOODS</option>
+                    <option value="commercial goods">COMMERCIAL GOODS</option>
+                    <option value="other">OTHER</option>
+                </select>
+                <div id="commodity_error"></div>
+            </div>
+            <div id="service_div">
+                <select  name="service" id="service" >
+                    <option value="" disabled selected> SELECT SERVICE</option>
+                    <option value="cargo service">CARGO SERVICE</option>
+                    <option value="relocation service">RELOCATION SERVICE</option>
+                    <option value="packing & storage service">PACKING & STORAGE SERVICE</option>
+                </select>
+                <div id="service_error"></div>
+                
+            </div>
+
+            <div id="long-grid">
+                <div id="message_div">
+                <textarea id="text-area"  name="message" placeholder="Message"></textarea>
+                <div id="message_error"></div>
+                </div>
+                <div class="submit-button-container">
+                    <div class="require-prompt">
+                        <i class="icon-info-circled"></i>
+                        <p>
+                            All the fields are required.
+                        </p>
+                    </div>
+                    <input type="submit" value="GET MOVING QUOTE" name="submit">
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+
     <!--Footer_Top Section-->
     <footer class="footer">
         <div class="container">
