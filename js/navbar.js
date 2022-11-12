@@ -2,11 +2,11 @@
 function addScrollEvent() {
     window.scrollTo(0, 0);
 
-    
+
     window.addEventListener("scroll", function () {
         navBarColor = document.getElementById("nav-color");
         navBarColorMobile = document.getElementById("nav-color-mobile");
-        
+
         if (this.window.pageYOffset > 2) {
             navBarColor.style = "background-color: rgba(10, 10, 10, 0.88);";
             navBarColorMobile.style = "background-color: rgba(10, 10, 10, 0.88);";
@@ -19,6 +19,7 @@ function addScrollEvent() {
 
 // functionality for exppanding the nav bar on mobile after clicking hamburger button
 function toggleNavButton() {
+
     navbarExpanded = document.getElementById("nav-expanded");
     if (navbarExpanded.classList.contains("hide")) {
         navbarExpanded.classList.remove("hide");
@@ -31,19 +32,15 @@ function toggleNavButton() {
 
 function defaultNavExpansion() {
     navbarExpanded = document.getElementById("nav-expanded");
-    // if mobile screen
-    if (window.matchMedia("max-width: 980px")) {
-        // if hidden
+
+
+    if (window.matchMedia("(max-width: 980px)").matches) {
         if (navbarExpanded.classList.contains("hide")) {
             navbarExpanded.style = "display: none;";
         } else {
             navbarExpanded.classList.add("hide");
             navbarExpanded.style = "display: flex;";
         }
-    }
-    // display always none in pc
-    else {
-        navbarExpanded.style = "display: none;";
     }
 }
 function addMediaQuery() {
@@ -52,6 +49,5 @@ function addMediaQuery() {
         defaultNavExpansion();
     });
 }
-
 addMediaQuery();
 addScrollEvent();

@@ -253,39 +253,24 @@
             </a>
         </div>
         <div class="right">
-            <ul>
-                <li class="nav-item"><a href="/" id="active" class="nav-link">HOME</a></li>
-                <li class="nav-item"><a class="nav-link" href="/service">SERVICES</a></li>
-                <li class="nav-item"><a class="nav-link" href="/free-moving-quote">MOVING QUOTE</a></li>
-                <li class="nav-item"><a class="nav-link" href="/track">TRACK SHIPMENT</a></li>
-                <li class="nav-item"><a class="nav-link" href="/testimonials">TESTIMONIALS</a></li>
-                <li class="nav-item"><a class="nav-link" href="/career">CAREER</a></li>
-                <li class="nav-item"><a class="nav-link" href="/contact">CONTACTS</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="nav-mobile" id="nav-color-mobile">
-        <div class="left">
-            <a class="navbar-brand" href="/">
-                <img src="images/logo.png" height="24" width="139" alt="BrightLink Logo" title="BrightLink Logo">
-            </a>
-        </div>
-        <div class="right" onclick="toggleNavButton()">
-                <i id="bars" class="icon-menu" aria-hidden="true"></i>
-        </div>
-    </div>
+            <div id="nav-expanded" class="hide">
+                <ul>
+                        <li class="nav-item"><a href="/" id="active" class="nav-link">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/service">SERVICES</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/free-moving-quote">MOVING QUOTE</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/track">TRACK SHIPMENT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/testimonials">TESTIMONIALS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/career">CAREER</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/contact">CONTACTS</a></li>
+                    </ul>
+            </div>
 
-    <div id="nav-expanded" class="hide">
-        <ul>
-                <li class="nav-item"><a href="/" id="active" class="nav-link">HOME</a></li>
-                <li class="nav-item"><a class="nav-link" href="/service">SERVICES</a></li>
-                <li class="nav-item"><a class="nav-link" href="/free-moving-quote">MOVING QUOTE</a></li>
-                <li class="nav-item"><a class="nav-link" href="/track">TRACK SHIPMENT</a></li>
-                <li class="nav-item"><a class="nav-link" href="/testimonials">TESTIMONIALS</a></li>
-                <li class="nav-item"><a class="nav-link" href="/career">CAREER</a></li>
-                <li class="nav-item"><a class="nav-link" href="/contact">CONTACTS</a></li>
-            </ul>
+            <i id="bars" onclick="toggleNavButton()" class="icon-menu" aria-hidden="true"></i>
+        </div>
     </div>
+   
+
+   
 
     <div class="fixed-socials">
         <a href="tel:+971581344800" class="float2" target="_blank" id="free_demo"><img src="images/bounce.svg"
