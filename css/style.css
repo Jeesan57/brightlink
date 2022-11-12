@@ -268,7 +268,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  z-index: 5;
+  z-index: -1;
   
 }
 

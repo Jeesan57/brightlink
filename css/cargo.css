@@ -333,6 +333,7 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
     position: relative;
+
   }
   
   .main-section::before {
@@ -347,7 +348,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    z-index: 5;
+    z-index: -1;
     
   }
   
