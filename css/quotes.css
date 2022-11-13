@@ -437,7 +437,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: max-content;
-    width: 90vw;
+    width: 80vw;
   }
 
   .main-section .content {
