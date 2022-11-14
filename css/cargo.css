@@ -300,7 +300,6 @@ body {
 .fixed-socials {
     position: fixed;
     width: max-content;
-
     height: 20%;
     left: 0%;
     top: 70vh;
@@ -309,13 +308,13 @@ body {
     justify-content: center;
     align-items: center;
     padding-left: 30px;
-
     z-index: 100;
 }
 
 .fixed-socials img {
     width: 50px;
-    aspect-ratio: 1;
+    /* aspect-ratio: 1; */
+    position:relative;
 }
 
 
