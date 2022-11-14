@@ -127,7 +127,7 @@ body {
   position: relative;
   min-width: 15vw;
   max-width: 15vw;
-  height: 60%;
+  height: 50%;
   border-radius: 10px;
   display: flex;
   align-items: flex-end;
@@ -160,8 +160,8 @@ body {
 }
 
 .image-container img {
-  height: 100%;
-  width: 90%;
+  height: 90%;
+  width: 85%;
   border-radius: 10px;
   filter: contrast(88%);
 }
