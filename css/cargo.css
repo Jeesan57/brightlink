@@ -95,10 +95,11 @@ body {
     max-width: 50vw;
     min-height: max-content;
     padding: 10px;
-    display: flex;
+    display:flex;
     flex-direction: column;
     color: white;
     font-family: "Quicksand", sans-serif;
+    position: absolute;
 }
 
 
