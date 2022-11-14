@@ -99,7 +99,7 @@ body {
     flex-direction: column;
     color: white;
     font-family: "Quicksand", sans-serif;
-    /* position: absolute; */
+    position: relative;
 }
 
 
