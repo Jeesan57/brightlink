@@ -99,7 +99,7 @@ body {
   flex-direction: column;
   color: white;
   font-family: "Quicksand", sans-serif;
-  position: absolute;
+  position: relative;
 }
 
 .explore-button {
@@ -169,6 +169,7 @@ body {
 .active-image-container {
   height: 80%;
   border-radius: 10px;
+  position: relative;
 }
 
 .move-button {
