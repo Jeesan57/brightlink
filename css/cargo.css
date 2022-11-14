@@ -313,8 +313,8 @@ body {
 
 .fixed-socials img {
     width: 50px;
-    /* aspect-ratio: 1; */
-    position:relative;
+    aspect-ratio: 1;
+    /* position:relative; */
 }
 
 
