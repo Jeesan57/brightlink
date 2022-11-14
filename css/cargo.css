@@ -169,7 +169,6 @@ body {
 .active-image-container {
   height: 80%;
   border-radius: 10px;
-  position: relative;
 }
 
 .move-button {
