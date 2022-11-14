@@ -164,7 +164,7 @@ body {
   width: 90%;
   border-radius: 10px;
   filter: contrast(88%);
-  position:absolute;
+  position:vrelative;
 }
 
 .active-image-container {
